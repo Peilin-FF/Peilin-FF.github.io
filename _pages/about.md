@@ -34,7 +34,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[An Empirical Study on Normalization in Mamba](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/An Empirical Study on Normalization in Mamba.pdf)
+[An Empirical Study on Normalization in Mamba](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
 
 **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu, Lei Huang
 
@@ -59,74 +59,30 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 - *2022.12* First Prize Scholarship in Beihang University (top5%)
 - *2022.06* Sencond Prize in Feng Ru Cup Science and Technology Innovation Competition
 
-# 📖 Educations
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgba(246, 249, 253, 0.878);">
-  <tbody>
-    <tr>
-      <td width="100%" valign="middle">
-        <h2 style="text-align: center;">Education</h2>
-        <table width="100%">
-          <tbody>
-            <tr>
-              <td width="90%">
-                <br>
-                <strong>Aug. 2022 - Now</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                School of Computing, &nbsp; <strong>National University of Singapore</strong>, &nbsp; Singapore<br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                Ph.D. in Computer Science <br>
-              </td>
-              <td width="10%">
-                <img src="images/NUS.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
-              </td>
-            </tr>
-            <tr>
-              <td width="90%">
-                <br>
-                <strong>Sep. 2019 - Jun. 2022</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                School of Cyber Science and Engineering, &nbsp; <strong>Wuhan University</strong>, &nbsp; China<br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                M.S. in Computer Science <br>
-              </td>
-              <td width="10%">
-                <img src="images/WHU.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
-              </td>
-            </tr>
-            <tr>
-              <td width="90%">
-                <br>
-                <strong>Sep. 2015 - Jun. 2019</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                School of Computer Science, &nbsp; <strong>Wuhan University</strong>, &nbsp; China<br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                B.S. in Computer Science and Technology
-              </td>
-              <td width="10%">
-                <img src="images/WHU.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
-</body>
-</html>
+# 📖 Education
+
+- *2022.09 - 2025.06 (Expected)*, Mathematical Science (Minor), Beihang University, Beijing, China. ![Logo](https://github.com/Peilin-FF/Peilin-FF.github.io/raw/main/images/Beihang.png)
+- *2021.09 - 2025.06 (Expected)*, Automation Science (Major), Beihang University, Beijing, China. ![Logo](https://github.com/Peilin-FF/Peilin-FF.github.io/raw/main/images/Beihang.png)
 
 
 
-<hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
 
 
-- *2022.09 - 2025.06 (Expected)*, Mathematical Science (Minor), Beihang University, Beijing, China. 
-- *2021.09 - 2025.06(Expected)*, Automation Science (Major), Beihang University, Beijing, China. 
+# 💬 Tutorial Materials in Teaching Assistant
 
-<img src="path/to/your/school-logo.png" alt="Beihang University Logo" style="float: right; width: 100px; height: auto;">
+## 🎤 Lectures:
+- *2022.11*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Indefinite Integral.  \| [\[video\]](https://m.weibo.cn/detail/4840358561187594)
+- *2022.10*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Equivalent Transform.  \| [\[video\]](https://m.weibo.cn/detail/4825133950703651)
+- *2022.09*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Limit in Recursion sequence.  \| [\[video\]](https://m.weibo.cn/detail/4817158976309764)
+- *2021.12*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Integration by parts. \| [\[video\]](https://www.bilibili.com/video/BV1Va411k7Hf/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+- *2021.11*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Rolle's theorem. \| [\[video\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+
+## 🎤 Test:
+- *2022.10*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/Test/MathematicalAnalysis(I)Test.pdf) & \| [\[Answer\]](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/Test/MathematicalAnalysis(I)Answer.pdf)
+- *2023.04*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/Test/MathematicalAnalysis(II)Test.pdf) & \| [\[Answer\]](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/Test/MathematicalAnalysis(II)Answer.pdf)
 
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # 💻 Internships
 - *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), China.
