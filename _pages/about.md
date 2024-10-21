@@ -18,6 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 My name is Peilin Feng (冯沛林), an undergraduate student at **Beihang University**(2021-2025), majoring in **Automation Science and Electrical Engineering** with a minor in **Mathematical Sciences**. Under the supervision of [Professor Lei Huang](https://huangleibuaa.github.io/), I am currently focusing on Sequence Modeling and Multi-agent systems. In the future, I will contribute to project [Tiny-Llava](https://github.com/TinyLLaVA/TinyLLaVA_Factory), where I aim to explore text and image modeling.
+
 I also have a deep passion for mathematics. I serve as a teaching assistant for the Mathematical Analysis for Engineering course. My responsibilities include grading homework, answering students' questions, and leading review lectures.
 Outside of my academic and research interests, I enjoy playing ping pong 🏓 and swimming 🤿. In my leisure time, I like to listen to some music 🎵 and watch my favorite cartoon Doraemon 📺 for relax.
 
@@ -42,7 +43,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 # 💡 Contribution
 - Explored the effects of normalization type, position, and combination for SSM
 - Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
-- Providing intuitions on combination selection
+- Provided intuitions on combination selection
 </div>
 </div>
 
