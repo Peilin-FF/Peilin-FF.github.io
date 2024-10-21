@@ -40,7 +40,9 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 
 
 # 💡 Contribution
-Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
+- Explored the effects of normalization type, position, and combination for SSM
+- Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
+- Providing intuitions on combination selection
 </div>
 </div>
 
@@ -58,46 +60,73 @@ Integrated extra normalization combinations before and after the SSM layer, sign
 - *2022.06* Sencond Prize in Feng Ru Cup Science and Technology Innovation Competition
 
 # 📖 Educations
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgba(246, 249, 253, 0.878);">
-  <tbody>
-    <tr>
-      <td width="100%" valign="middle">
-        <table width="100%">
-          <tbody>
-            <tr>
-              <td width="90%">
-                <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* 确保不显示分割线的CSS样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* 合并边框，消除间隙 */
+            background-color: rgba(246, 249, 253, 0.878);
+        }
+        td {
+            padding: 20px; /* 单元格内边距 */
+            border: none; /* 不显示单元格边框 */
+        }
+        img {
+            width: 90%; /* 校徽的宽度 */
+            display: block; /* 使图片为块元素，居中显示 */
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+<table align="center">
+    <tbody>
+        <tr>
+            <td width="90%">
                 <strong>Sep. 2021 - Jun. 2025 (Expected)</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                 School of Automation Science, &nbsp; <strong>Beihang University</strong>, &nbsp; China<br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                 B.E. in Automation Science and Electrical Engineering <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                 B.S. in Mathematics (Minor)
-              </td>
-              <td width="10%">
-                <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
+            </td>
+            <td width="10%">
+                <img src="images/Beihang.png" alt="Beihang University Logo">
+            </td>
+        </tr>
+    </tbody>
 </table>
+
+</body>
+</html>
 
 
 
 <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
 
 # 💬 Tutorial Materials in Teaching Assistant
-# 🎤 Letures:
-- *2022.11*, Tutorial, Mathematical Analysis: Indefinite Integral.  \| [\[video\]](https://m.weibo.cn/detail/4840358561187594)
-- *2022.10*, Tutorial, Mathematical Analysis: Equivalent Transform.  \| [\[video\]](https://m.weibo.cn/detail/4825133950703651)
-- *2022.09*, Tutorial, Mathematical Analysis: Limit in Recursion sequence.  \| [\[video\]](https://m.weibo.cn/detail/4817158976309764)
-- *2021.12*，Tutorial, Mathematical Analysis: Integration by parts \| [\[video\]](https://www.bilibili.com/video/BV1Va411k7Hf/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
-- *2021.11*，Tutorial, Mathematical Analysis: Rolle's theorem \| [\[video\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
-# 🎤 Test:
--*2022.10*, Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)& \| [\[Answer\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
--*2023.04*, Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)& \| [\[Answer\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+
+## 🎤 Lectures:
+- *2022.11*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Indefinite Integral.  \| [\[video\]](https://m.weibo.cn/detail/4840358561187594)
+- *2022.10*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Equivalent Transform.  \| [\[video\]](https://m.weibo.cn/detail/4825133950703651)
+- *2022.09*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Limit in Recursion sequence.  \| [\[video\]](https://m.weibo.cn/detail/4817158976309764)
+- *2021.12*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Integration by parts. \| [\[video\]](https://www.bilibili.com/video/BV1Va411k7Hf/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+- *2021.11*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Rolle's theorem. \| [\[video\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+
+## 📄 Test:
+- *2022.10*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af) & \| [\[Answer\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+- *2023.04*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af) & \| [\[Answer\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+
 # 💻 Internships
 - *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), China.
