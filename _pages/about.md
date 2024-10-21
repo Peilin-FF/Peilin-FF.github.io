@@ -34,8 +34,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[An Empirical Study on Normalization in Mamba](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
-
+[An Empirical Study on Normalization in Mamba](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
 **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu, Lei Huang
 
 
