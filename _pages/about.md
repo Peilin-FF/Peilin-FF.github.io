@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Welcome to Peilin's Web"
 excerpt: ""
 author_profile: true
 redirect_from: 
@@ -85,4 +85,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 - *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), China.
 
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=mMK1rjT3slhtqW6EXqn3Wn268ziG6LZDCL41dnwmln0&cl=ffffff&w=a"></script>
-<a href="https://clustrmaps.com/site/1c1tr"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=mMK1rjT3slhtqW6EXqn3Wn268ziG6LZDCL41dnwmln0&cl=ffffff" /></a>
+<a href="https://clustrmaps.com/site/1c1tr"  title="Visit tracker">
+    <img src="//www.clustrmaps.com/map_v2.png?d=mMK1rjT3slhtqW6EXqn3Wn268ziG6LZDCL41dnwmln0&cl=ffffff" style="width:150px; height:auto;" />
+</a>
+
