@@ -31,10 +31,10 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[An Empirical Study on Normalization in Mamba](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[An Empirical Study on Normalization in Mamba](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/An Empirical Study on Normalization in Mamba.pdf)
 
 **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu, Lei Huang
 
@@ -48,13 +48,13 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
-- *2022.12* First Prize Scholarship in Beihang University (top5%)
-- *2022.12* First Prize Scholarship in Beihang University (top5%)
-- *2022.12* First Prize Scholarship in Beihang University (top5%)
-- *2022.12* First Prize Scholarship in Beihang University (top5%)
-- *2022.12* First Prize Scholarship in Beihang University (top5%)
-- *2022.12* First Prize Scholarship in Beihang University (top5%)
+- *2023.12* Outstanding student cadres
+- *2023.12* First Prize in Beijing Mathematics Competition (114th in Beijing)
+- *2023.12* Second Prize for Contests Scholarship in Beihang University
+- *2023.12* Second Prize in China Undergraduate Mathematical Contest in Modeling
+- *2023.12* Second Prize in China Undergraduate Mathematical Contest in Modeling
+- *2023.09* Outstanding Teaching Assistant in Mathematical Analysis(6/32)
+- *2023.06* Sencond Prize in Qixian Cup Robot Challenge Competition(4/32)
 - *2022.12* First Prize Scholarship in Beihang University (top5%)
 - *2022.06* Sencond Prize in Feng Ru Cup Science and Technology Innovation Competition
 
@@ -63,7 +63,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
   <tbody>
     <tr>
       <td width="100%" valign="middle">
-        <h2 style="text-align: center;">Education</h2>
+        <!-- <h2 style="text-align: center;">Education</h2> -->
         <table width="100%">
           <tbody>
             <tr>
@@ -75,7 +75,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
                 Ph.D. in Computer Science <br>
               </td>
               <td width="10%">
-                <img src="images/NUS.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
+                <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
               </td>
             </tr>
             <tr>
@@ -87,19 +87,20 @@ My research interests span the intersection of NLP and Computer Vision, with a p
                 M.S. in Computer Science <br>
               </td>
               <td width="10%">
-                <img src="images/WHU.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
+                <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
               </td>
             </tr>
             <tr>
               <td width="90%">
                 <br>
-                <strong>Sep. 2015 - Jun. 2019</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                School of Computer Science, &nbsp; <strong>Wuhan University</strong>, &nbsp; China<br>
+                <strong>Sep. 2021 - Jun. 2025(Expected)</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                School of Automation Science, &nbsp; <strong>Beihang University</strong>, &nbsp; China<br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                B.S. in Computer Science and Technology
+                B.E. in Automation Science and Electrical Engineering
+                B.S. in  Mathematics(Minor)
               </td>
               <td width="10%">
-                <img src="images/WHU.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
+                <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
               </td>
             </tr>
           </tbody>
@@ -111,16 +112,9 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 
 <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
 
-
-- *2022.09 - 2025.06 (Expected)*, Mathematical Science (Minor), Beihang University, Beijing, China. 
-- *2021.09 - 2025.06(Expected)*, Automation Science (Major), Beihang University, Beijing, China. 
-
-<img src="path/to/your/school-logo.png" alt="Beihang University Logo" style="float: right; width: 100px; height: auto;">
-
-
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), China.
