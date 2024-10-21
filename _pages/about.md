@@ -35,6 +35,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 <div class='paper-box-text' markdown="1">
 
 [An Empirical Study on Normalization in Mamba](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
+
 **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu, Lei Huang
 
 
@@ -61,8 +62,8 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 
 # 📖 Education
 
-- *2022.09 - 2025.06 (Expected)*, Mathematical Science (Minor), Beihang University, Beijing, China. ![Logo](https://github.com/Peilin-FF/Peilin-FF.github.io/raw/main/images/Beihang.png)
-- *2021.09 - 2025.06 (Expected)*, Automation Science (Major), Beihang University, Beijing, China. ![Logo](https://github.com/Peilin-FF/Peilin-FF.github.io/raw/main/images/Beihang.png)
+- *2022.09 - 2025.06 (Expected)*, Mathematical Science (Minor), Beihang University, Beijing, China. 
+- *2021.09 - 2025.06 (Expected)*, Automation Science (Major), Beihang University, Beijing, China. 
 
 
 
@@ -78,8 +79,8 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 - *2021.11*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Rolle's theorem. \| [\[video\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
 
 ## 🎤 Test:
-- *2022.10*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/Test/MathematicalAnalysis(I)Test.pdf) & \| [\[Answer\]](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/Test/MathematicalAnalysis(I)Answer.pdf)
-- *2023.04*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/Test/MathematicalAnalysis(II)Test.pdf) & \| [\[Answer\]](https://github.com/Peilin-FF/Peilin-FF.github.io/tree/main/profiles/Test/MathematicalAnalysis(II)Answer.pdf)
+- *2022.10*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(I)Test.pdf) & \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(I)Answer.pdf)
+- *2023.04*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(II)Test.pdf) & \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(II)Answer.pdf)
 
 
 
