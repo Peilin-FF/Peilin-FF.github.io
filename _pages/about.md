@@ -29,7 +29,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 # 🔥 News
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
-# 📝 Publication
+# 📝 Publications
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -59,7 +59,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 - *2022.06* Sencond Prize in Feng Ru Cup Science and Technology Innovation Competition
 
 
-# 📖 Education
+# 📖 Educations
 
 - *2022.09 - 2025.06 (Expected)*, Mathematical Science (Minor), Beihang University, Beijing, China. 
 - *2021.09 - 2025.06 (Expected)*, Automation Science (Major), Beihang University, Beijing, China. 
@@ -79,5 +79,5 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 
 
 
-# 💻 Internship
+# 💻 Internships
 - *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), China.
