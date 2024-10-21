@@ -84,10 +84,5 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 # 💻 Internships
 - *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), China.
 
-<div style="text-align: center;">
-    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=vJ2iQZHqueQfkOgkoZ_uLaKlYHLaD8Dyt-Y3Z0hk8E8&cl=ffffff&w=a"></script>
-    <a href="https://clustrmaps.com/site/1bzi8" title="Visit tracker">
-        <img src="//www.clustrmaps.com/map_v2.png?d=vJ2iQZHqueQfkOgkoZ_uLaKlYHLaD8Dyt-Y3Z0hk8E8&cl=ffffff" style="width: auto; height: auto;" />
-    </a>
-</div>
-
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=fffdf2&w=200&t=tt&d=mMK1rjT3slhtqW6EXqn3Wn268ziG6LZDCL41dnwmln0&co=0d4974&cmo=0d73fb&cmn=ff0000&ct=fbf1ec'></script>
+<!-- <a href="https://clustrmaps.com/site/1c1tr"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=mMK1rjT3slhtqW6EXqn3Wn268ziG6LZDCL41dnwmln0&cl=ffffff" /></a> -->
