@@ -39,9 +39,8 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu, Lei Huang
 
 
-# ⚙️ Projects
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# 💡 Contribution
+Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
 </div>
 </div>
 
@@ -63,41 +62,17 @@ My research interests span the intersection of NLP and Computer Vision, with a p
   <tbody>
     <tr>
       <td width="100%" valign="middle">
-        <!-- <h2 style="text-align: center;">Education</h2> -->
         <table width="100%">
           <tbody>
             <tr>
               <td width="90%">
                 <br>
-                <strong>Aug. 2022 - Now</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                School of Computing, &nbsp; <strong>National University of Singapore</strong>, &nbsp; Singapore<br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                Ph.D. in Computer Science <br>
-              </td>
-              <td width="10%">
-                <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
-              </td>
-            </tr>
-            <tr>
-              <td width="90%">
-                <br>
-                <strong>Sep. 2019 - Jun. 2022</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                School of Cyber Science and Engineering, &nbsp; <strong>Wuhan University</strong>, &nbsp; China<br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                M.S. in Computer Science <br>
-              </td>
-              <td width="10%">
-                <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
-              </td>
-            </tr>
-            <tr>
-              <td width="90%">
-                <br>
-                <strong>Sep. 2021 - Jun. 2025(Expected)</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <strong>Sep. 2021 - Jun. 2025 (Expected)</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                 School of Automation Science, &nbsp; <strong>Beihang University</strong>, &nbsp; China<br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                B.E. in Automation Science and Electrical Engineering
-                B.S. in  Mathematics(Minor)
+                B.E. in Automation Science and Electrical Engineering <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                B.S. in Mathematics (Minor)
               </td>
               <td width="10%">
                 <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
@@ -110,11 +85,19 @@ My research interests span the intersection of NLP and Computer Vision, with a p
   </tbody>
 </table>
 
+
+
 <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
+# 💬 Tutorial Materials in Teaching Assistant
+# 🎤 Letures:
+- *2022.11*, Tutorial, Mathematical Analysis: Indefinite Integral.  \| [\[video\]](https://m.weibo.cn/detail/4840358561187594)
+- *2022.10*, Tutorial, Mathematical Analysis: Equivalent Transform.  \| [\[video\]](https://m.weibo.cn/detail/4825133950703651)
+- *2022.09*, Tutorial, Mathematical Analysis: Limit in Recursion sequence.  \| [\[video\]](https://m.weibo.cn/detail/4817158976309764)
+- *2021.12*，Tutorial, Mathematical Analysis: Integration by parts \| [\[video\]](https://www.bilibili.com/video/BV1Va411k7Hf/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+- *2021.11*，Tutorial, Mathematical Analysis: Rolle's theorem \| [\[video\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+# 🎤 Test:
+-*2022.10*, Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)& \| [\[Answer\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
+-*2023.04*, Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)& \| [\[Answer\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
 # 💻 Internships
 - *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), China.
