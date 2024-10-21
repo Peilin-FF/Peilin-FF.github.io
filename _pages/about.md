@@ -39,9 +39,10 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu, Lei Huang
 
 
-# ⚙️ Projects
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# 💡 Contribution
+- Explored the effects of normalization type, position, and combination for SSM
+- Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
+- Providing intuitions on combination selection
 </div>
 </div>
 
@@ -63,7 +64,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
   <tbody>
     <tr>
       <td width="100%" valign="middle">
-        <!-- <h2 style="text-align: center;">Education</h2> -->
+        <h2 style="text-align: center;">Education</h2>
         <table width="100%">
           <tbody>
             <tr>
@@ -75,7 +76,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
                 Ph.D. in Computer Science <br>
               </td>
               <td width="10%">
-                <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
+                <img src="images/NUS.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
               </td>
             </tr>
             <tr>
@@ -87,20 +88,19 @@ My research interests span the intersection of NLP and Computer Vision, with a p
                 M.S. in Computer Science <br>
               </td>
               <td width="10%">
-                <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
+                <img src="images/WHU.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
               </td>
             </tr>
             <tr>
               <td width="90%">
                 <br>
-                <strong>Sep. 2021 - Jun. 2025(Expected)</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                School of Automation Science, &nbsp; <strong>Beihang University</strong>, &nbsp; China<br>
+                <strong>Sep. 2015 - Jun. 2019</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                School of Computer Science, &nbsp; <strong>Wuhan University</strong>, &nbsp; China<br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                B.E. in Automation Science and Electrical Engineering
-                B.S. in  Mathematics(Minor)
+                B.S. in Computer Science and Technology
               </td>
               <td width="10%">
-                <img src="images/Beihang.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
+                <img src="images/WHU.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
               </td>
             </tr>
           </tbody>
@@ -110,7 +110,19 @@ My research interests span the intersection of NLP and Computer Vision, with a p
   </tbody>
 </table>
 
+</body>
+</html>
+
+
+
 <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
+
+
+- *2022.09 - 2025.06 (Expected)*, Mathematical Science (Minor), Beihang University, Beijing, China. 
+- *2021.09 - 2025.06(Expected)*, Automation Science (Major), Beihang University, Beijing, China. 
+
+<img src="path/to/your/school-logo.png" alt="Beihang University Logo" style="float: right; width: 100px; height: auto;">
+
 
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
