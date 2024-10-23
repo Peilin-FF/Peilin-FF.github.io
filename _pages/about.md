@@ -24,10 +24,13 @@ Outside of my academic and research interests, I enjoy playing ping pong 🏓 an
 
 
 My research interests span the intersection of NLP and Computer Vision, with a particular focus on Multi-agent systems. This stems from my dedication to creating an AGI similar to Doraemon 🐱. Currently, I am actively working to bridge my knowledge gaps in this area, with the goal of becoming an expert in the field. 
+
+However, artificial intelligence is developing rapidly, so I always hope to be at the forefront of the field and use my intelligence to devote to our society. I believe that is an exciting exploring travel.
 <!--(You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
 
 # 🔥 News
+- *2024.11*: &nbsp;🍀🍀 I'm currently chasing after a position to pursue my doctoral degree and would appreciate your valuable consideration. Thank you!
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
@@ -52,6 +55,7 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 
 # 🎖 Honors and Awards
 - *2023.12* Outstanding student cadres
+- *2023.12* First Prize in the Chinese Mathematics Competition
 - *2023.12* First Prize in Beijing Mathematics Competition (114th in Beijing)
 - *2023.12* Second Prize for Contests Scholarship in Beihang University
 - *2023.12* Second Prize in China Undergraduate Mathematical Contest in Modeling
@@ -76,8 +80,8 @@ My research interests span the intersection of NLP and Computer Vision, with a p
 - *2021.11*,&nbsp;&nbsp;Tutorial, Mathematical Analysis: Rolle's theorem. \| [\[video\]](https://www.bilibili.com/video/BV1UM4y1P755/?spm_id_from=333.999.0.0&vd_source=6a5aa1ac5ba5c7ca5c6bc79c1f65e5af)
 
 ## 📄 Test:
-- *2022.10*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(I)Test.pdf) \& \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(I)Answer.pdf)
-- *2023.04*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(II)Test.pdf) \& \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(II)Answer.pdf)
+- *2022.10*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(I)Test.pdf) & \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(I)Answer.pdf)
+- *2023.04*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(II)Test.pdf) & \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(II)Answer.pdf)
 
 
 
