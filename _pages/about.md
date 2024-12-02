@@ -35,41 +35,31 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">CVPR 2025</div>
-      <img src='images/paper/benchcoe.png' alt="sym" width="100%">
-    </div> <!-- 结束第一个内部内容的 div -->
-  </div> <!-- 结束 class='paper-box-image' -->
-  <div class='paper-box-text' markdown="1">
-    [Bench-CoE: a Framework for Collaboration of Experts from Benchmark](./profiles/paper/benchcoe.pdf)
-    Yuanshuai Wang*, Xingjian Zhang*, Jinkun Zhao*, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang^✉^, Wenjun Wu^✉^
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-    # 💡 Contribution
-    - We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
-    - We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
-  </div> <!-- 结束 class='paper-box-text' -->
-</div> <!-- 结束第一个 class='paper-box' -->
+[Bench-CoE: a Framework for Collaboration of Experts from Benchmark](./profiles/paper/benchcoe.pdf)
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">ICLR 2025</div>
-      <img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%">
-    </div> <!-- 结束第二个内部内容的 div -->
-  </div> <!-- 结束 class='paper-box-image' -->
-  <div class='paper-box-text' markdown="1">
-    [An Empirical Study on Normalization in Mamba](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
-    **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu^✉^, Lei Huang^✉^
+Yuanshuai Wang*, Xingjian Zhang*, Jinkun Zhao*, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang<sup>✉</sup>, Wenjun Wu<sup>✉</sup>
 
-    # 💡 Contribution
-    - Explored the effects of normalization type, position, and combination for SSM
-    - Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
-    - Provided intuitions on combination selection
-  </div> <!-- 结束 class='paper-box-text' -->
-</div> <!-- 结束第二个 class='paper-box' -->
+# 💡 Contribution
+- We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
+- We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[An Empirical Study on Normalization in Mamba](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
+
+**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
+
+
+# 💡 Contribution
+- Explored the effects of normalization type, position, and combination for SSM
+- Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
+- Provided intuitions on combination selection
+</div>
+</div>
 
 
 # 🎖 Honors and Awards
