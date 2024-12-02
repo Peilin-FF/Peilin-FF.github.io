@@ -30,17 +30,28 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
+- *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fightning💪!
 - *2024.11*: &nbsp;🍀🍀 I'm currently chasing after a position to pursue my doctoral degree and would appreciate your valuable consideration. Thank you!
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Bench-CoE: a Framework for Collaboration of Experts from Benchmark](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
+
+Yuanshuai Wang*, Xingjian Zhang*, Jinkun Zhao*, Siwei Wen, Peilin Feng, Shuhao Liao, Lei Huang^✉^, Wenjun Wu^✉^
+
+# 💡 Contribution
+- We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
+- We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Empirical Study on Normalization in Mamba](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
 
-**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu, Lei Huang
+**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu^✉^, Lei Huang^✉^
 
 
 # 💡 Contribution
@@ -54,6 +65,8 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
+- *2024.12* Grand prize for Contests Scholarship in Beihang University
+- *2024.12* Second Prize Scholarship in Beihang University
 - *2023.12* Outstanding student cadres
 - *2023.12* First Prize in the Chinese Mathematics Competition
 - *2023.12* First Prize in Beijing Mathematics Competition (114th in Beijing)
