@@ -40,7 +40,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 [Bench-CoE: a Framework for Collaboration of Experts from Benchmark](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
 
-Yuanshuai Wang*, Xingjian Zhang*, Jinkun Zhao*, Siwei Wen, Peilin Feng, Shuhao Liao, Lei Huang^✉^, Wenjun Wu^✉^
+Yuanshuai Wang*, Xingjian Zhang*, Jinkun Zhao*, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang^✉^, Wenjun Wu^✉^
 
 # 💡 Contribution
 - We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
@@ -52,7 +52,7 @@ Yuanshuai Wang*, Xingjian Zhang*, Jinkun Zhao*, Siwei Wen, Peilin Feng, Shuhao L
 
 [An Empirical Study on Normalization in Mamba](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
 
-**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu^✉^, Lei Huang^✉^ -->
+**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu^✉^, Lei Huang^✉^ 
 
 
  # 💡 Contribution
