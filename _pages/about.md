@@ -40,7 +40,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 [Bench-CoE: a Framework for Collaboration of Experts from Benchmark](./profiles/paper/benchcoe.pdf)
 
-Yuanshuai Wang**, Xingjian Zhang**, Jinkun Zhao**, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang<sup>✉</sup>, Wenjun Wu<sup>✉</sup>
+Yuanshuai Wang\*, Xingjian Zhang\*, Jinkun Zhao\*, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang<sup>✉</sup>, Wenjun Wu<sup>✉</sup>
 
 # 💡 Contribution
 - We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
