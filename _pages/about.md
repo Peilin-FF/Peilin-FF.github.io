@@ -45,8 +45,9 @@ Yuanshuai Wang*, Xingjian Zhang*, Jinkun Zhao*, Siwei Wen, Peilin Feng, Shuhao L
 # 💡 Contribution
 - We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
 - We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
+</div>
+</div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Empirical Study on Normalization in Mamba](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
@@ -54,15 +55,13 @@ Yuanshuai Wang*, Xingjian Zhang*, Jinkun Zhao*, Siwei Wen, Peilin Feng, Shuhao L
 **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu^✉^, Lei Huang^✉^ -->
 
 
-<!-- # 💡 Contribution
+ # 💡 Contribution
 - Explored the effects of normalization type, position, and combination for SSM
 - Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
-- Provided intuitions on combination selection -->
+- Provided intuitions on combination selection
 </div>
 </div>
 
-<!-- # 💡 Contribution
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
 - *2024.12* Grand prize for Contests Scholarship in Beihang University
