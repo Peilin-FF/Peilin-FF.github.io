@@ -45,7 +45,8 @@ Yuanshuai Wang*, Xingjian Zhang*, Jinkun Zhao*, Siwei Wen, **Peilin Feng**, Shuh
 # 💡 Contribution
 - We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
 - We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
-
+</div>
+</div>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
