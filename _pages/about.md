@@ -35,7 +35,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">:mag_right:CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Bench-CoE: a Framework for Collaboration of Experts from Benchmark](https://arxiv.org/pdf/2412.04167)
@@ -47,7 +47,7 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 - We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
 </div>
 </div>
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">:mag_right:ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Empirical Study on Normalization in Mamba](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
