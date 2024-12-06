@@ -38,9 +38,9 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Bench-CoE: a Framework for Collaboration of Experts from Benchmark](./profiles/paper/benchcoe.pdf)
+[Bench-CoE: a Framework for Collaboration of Experts from Benchmark](https://arxiv.org/pdf/2412.04167)
 
-Yuanshuai Wang\*, Xingjian Zhang\*, Jinkun Zhao\*, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang<sup>✉</sup>, Wenjun Wu<sup>✉</sup>
+Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†</sup>, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang<sup>✉</sup>, Wenjun Wu<sup>✉</sup>
 
 # 💡 Contribution
 - We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
