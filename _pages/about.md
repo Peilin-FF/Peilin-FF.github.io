@@ -17,19 +17,20 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Peilin Feng (冯沛林), an undergraduate student at **Beihang University**(2021-2025), majoring in **Automation Science and Electrical Engineering** with a minor in **Mathematical Sciences**. Under the supervision of [Professor Lei Huang](https://huangleibuaa.github.io/), I am currently focusing on Sequence Modeling and Multi-agent systems. In the future, I will contribute to project [Tiny-Llava](https://github.com/TinyLLaVA/TinyLLaVA_Factory), where I aim to explore text and image modeling.
+My name is Peilin Feng (冯沛林), an undergraduate student at **Beihang University**(2021-2025), majoring in **Automation Science and Electrical Engineering** with a minor in **Mathematical Sciences**. Under the supervision of [Professor Lei Huang](https://huangleibuaa.github.io/), I am currently focusing on Deep neural network architecture design and Multimodal Understanding. In the future, I will contribute to project [Tiny-Llava](https://github.com/TinyLLaVA/TinyLLaVA_Factory), where I aim to explore text and image modeling.
 
 I also have a deep passion for mathematics. I serve as a teaching assistant for the Mathematical Analysis for Engineering course. My responsibilities include grading homework, answering students' questions, and leading review lectures.
 Outside of my academic and research interests, I enjoy playing ping pong 🏓 and swimming 🤿. In my leisure time, I like to listen to some music 🎵 and watch my favorite cartoon Doraemon 📺 for relax.
 
 
-My research interests span the intersection of NLP and Computer Vision, with a particular focus on Multi-agent systems. This stems from my dedication to creating an AGI similar to Doraemon 🐱. Currently, I am actively working to bridge my knowledge gaps in this area, with the goal of becoming an expert in the field. 
+My research interests span the intersection of NLP and Computer Vision, with a particular focus on Multimodal Understanding. This stems from my dedication to creating an AGI similar to Doraemon 🐱. Currently, I am actively working to bridge my knowledge gaps in this area, with the goal of becoming an expert in the field. 
 
 However, artificial intelligence is developing rapidly, so I always hope to be at the forefront of the field and use my intelligence to devote to our society. I believe that is an exciting exploring travel.
 <!--(You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
 
 # 🔥 News
+- *2025.01*: &nbsp;😊😊 I am excited to gain the opportunity to intern with the Multimodal Group at the Shanghai National AI Lab from Feb. 2025. I look forward to collaborating with like-minded mentors and peers on interesting and meaningful work.
 - *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fightning💪!
 - *2024.11*: &nbsp;🍀🍀 I'm currently chasing after a position to pursue my doctoral degree and would appreciate your valuable consideration. Thank you!
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
