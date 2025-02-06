@@ -30,12 +30,28 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
+- *2024.10*: &nbsp;🎉🎉 I successfully submitted two papers to ICML 2025, wishing good results.
 - *2025.01*: &nbsp;😊😊 I am excited to gain the opportunity to intern with the Multimodal Group at the Shanghai National AI Lab from Feb. 2025. I look forward to collaborating with like-minded mentors and peers on interesting and meaningful work.
 - *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fightning💪!
 - *2024.11*: &nbsp;🍀🍀 I'm currently chasing after a position to pursue my doctoral degree and would appreciate your valuable consideration. Thank you!
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICML 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[An Empirical Study on Normalization in Mamba](./profiles/paper/Mamba.pdf)
+
+**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
+
+
+# 💡 Contribution
+- Explored the effects of normalization type, position, and combination for SSM
+- Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
+- Provided intuitions on combination selection
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -48,20 +64,7 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 - We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
 </div>
 </div>
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICLR 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-[An Empirical Study on Normalization in Mamba](./profiles/paper/AnEmpiricalStudyonNormalizationinMamba.pdf)
-
-**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
-
-
-# 💡 Contribution
-- Explored the effects of normalization type, position, and combination for SSM
-- Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
-- Provided intuitions on combination selection
-</div>
-</div>
 
 
 # 🎖 Honors and Awards
