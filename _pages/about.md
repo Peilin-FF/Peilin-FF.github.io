@@ -37,17 +37,17 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICML 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICML 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[An Empirical Study on Normalization in Mamba](./profiles/paper/Mamba.pdf)
+[Universal Approximation Theorem of Networks Activated by Normalization](./profiles/paper/UniversalApproximation.pdf)
 
-**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
+Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
 
 # 💡 Contribution
-- Explored the effects of normalization type, position, and combination for Mamba architecture
-- Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
-- Provided intuitions on combination selection to improve the training dynamic
+- Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
+- Compared the nonlinearity and optimization capability of PLN in time series prediction tasks.
+- Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization.
 </div>
 </div>
 
@@ -56,7 +56,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 [An Empirical Study on Normalization in Mamba](./profiles/paper/Mamba.pdf)
 
-**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
+**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Lizhong Ding, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
 
 # 💡 Contribution
 - Explored the effects of normalization type, position, and combination for Mamba architecture
