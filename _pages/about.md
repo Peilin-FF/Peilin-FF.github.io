@@ -44,11 +44,24 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
 
+# 💡 Contribution
+- Explored the effects of normalization type, position, and combination for Mamba architecture
+- Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
+- Provided intuitions on combination selection to improve the training dynamic
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICML 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[An Empirical Study on Normalization in Mamba](./profiles/paper/Mamba.pdf)
+
+**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
 
 # 💡 Contribution
-- Explored the effects of normalization type, position, and combination for SSM
+- Explored the effects of normalization type, position, and combination for Mamba architecture
 - Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
-- Provided intuitions on combination selection
+- Provided intuitions on combination selection to improve the training dynamic
 </div>
 </div>
 
