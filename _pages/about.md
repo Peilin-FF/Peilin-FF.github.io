@@ -114,15 +114,15 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 
 
 # 💻 Internships
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/shlab.png' alt="SHLAB" width="40%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/shlab.png' alt="SHLAB" width="40%" style="margin-bottom: 0;"></div></div>
+<div class='paper-box-text' markdown="1" style="margin-top: -20px;">
 
 - *2025.02 - Present*, [Shanghai National AI Lab](https://www.shlab.org.cn/), Shanghai, China.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/cast.png' alt="CAST" width="40%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/cast.png' alt="CAST" width="40%" style="margin-bottom: 0;"></div></div>
+<div class='paper-box-text' markdown="1" style="margin-top: -20px;">
 
 - *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), Beijing, China.
 </div>
