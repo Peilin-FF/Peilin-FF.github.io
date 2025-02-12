@@ -122,7 +122,7 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/cast.png' alt="CAST" width="40%" style="margin-bottom: 0;"></div></div>
-<div class='paper-box-text' markdown="1" style="margin-top: -20px; margin-left: -1em;">
+<div class='paper-box-text' markdown="1" style="margin-top: -20px; margin-left: -10em;">
 
 - *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), Beijing, China.
 </div>
