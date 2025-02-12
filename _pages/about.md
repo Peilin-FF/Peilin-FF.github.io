@@ -30,7 +30,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
-- *2024.10*: &nbsp;🎉🎉 I successfully submitted two papers to ICML 2025, wishing good results.
+- *2025.02*: &nbsp;🎉🎉 I successfully submitted two papers to ICML 2025, wishing good results.
 - *2025.01*: &nbsp;😊😊 I am excited to gain the opportunity to intern with the Multimodal Group at the Shanghai National AI Lab from Feb. 2025. I look forward to collaborating with like-minded mentors and peers on interesting and meaningful work.
 - *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fightning💪!
 - *2024.11*: &nbsp;🍀🍀 I'm currently chasing after a position to pursue my doctoral degree and would appreciate your valuable consideration. Thank you!
@@ -114,7 +114,19 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 
 
 # 💻 Internships
-- *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), China.
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/internship/shlab.png' alt="SHLAB" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+- *2025.02 - Present*, [Shanghai National AI Lab](https://www.shlab.org.cn/), Shanghai, China.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/internship/cast.png' alt="CAST" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+- *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), Beijing, China.
+</div>
+</div>
 
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=fffdf2&w=200&t=tt&d=mMK1rjT3slhtqW6EXqn3Wn268ziG6LZDCL41dnwmln0&co=0d4974&cmo=0d73fb&cmn=ff0000&ct=fbf1ec'></script>
 <!-- <a href="https://clustrmaps.com/site/1c1tr"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=mMK1rjT3slhtqW6EXqn3Wn268ziG6LZDCL41dnwmln0&cl=ffffff" /></a> -->
