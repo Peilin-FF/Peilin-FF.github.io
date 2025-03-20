@@ -46,9 +46,8 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu, Wenjun Wu, Conghui He<sup>✉</sup>, Weijia Li<sup>✉</sup>
 
 # 💡 Contribution
-- Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
-- Compared the nonlinearity and optimization capability of PLN in time series prediction tasks.
-- Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization.
+- Introduced FakeClue, a comprehensive dataset containing over 100,000 synthetic and real images across seven categories, annotated with fine-grained artifact clues in natural language.
+- Proposed FakeVLM, a specialized large multimodal model for synthetic image and DeepFake detection, combining authenticity classification with natural language explanations of image artifacts.
 </div>
 </div>
 
@@ -60,9 +59,8 @@ Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jian
 Hengrui Kang, Siwei Wen, Zichen Wen, Junyan Ye, Weijia Li, **Peilin Feng**, Baichuan Zhou, Bin Wang, Dahua Lin, Linfeng Zhang<sup>✉</sup>, Conghui He<sup>✉</sup>
 
 # 💡 Contribution
-- Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
-- Compared the nonlinearity and optimization capability of PLN in time series prediction tasks.
-- Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization.
+- Introduced SynthScars, a high-quality synthetic image detection dataset featuring diverse content types, fine-grained pixel-level artifact annotations, and detailed textual explanations.
+- Proposed LEGION: a multimodal large language model-based framework for artifact localization, explanation generation, and forgery detection, enhancing interpretability in synthetic image analysis.
 </div>
 </div>
 
