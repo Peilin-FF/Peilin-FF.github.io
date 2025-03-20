@@ -30,6 +30,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
+- *2025.03*: &nbsp;🎉🎉 I successfully submitted two papers to ICCV 2025, wishing good results.
 - *2025.02*: &nbsp;🎉🎉 I successfully submitted two papers to ICML 2025, wishing good results.
 - *2025.01*: &nbsp;😊😊 I am excited to gain the opportunity to intern with the Multimodal Group at the Shanghai National AI Lab from Feb. 2025. I look forward to collaborating with like-minded mentors and peers on interesting and meaningful work.
 - *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fightning💪!
@@ -37,6 +38,34 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Spot the Fake: Large Multimodal Model-Based Synthetic Image Detection with Artifact Explanation](https://arxiv.org/pdf/2503.14905)
+
+Siwei Wen, Junyan Ye, Peilin Feng, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu, Wenjun Wu, Conghui He<sup>✉</sup>, Weijia Li<sup>✉</sup>
+
+# 💡 Contribution
+- Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
+- Compared the nonlinearity and optimization capability of PLN in time series prediction tasks.
+- Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Universal Approximation Theorem of Networks Activated by Normalization](./profiles/paper/UniversalApproximation.pdf)
+
+Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
+
+# 💡 Contribution
+- Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
+- Compared the nonlinearity and optimization capability of PLN in time series prediction tasks.
+- Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICML 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
