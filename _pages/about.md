@@ -38,12 +38,12 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Spot the Fake: Large Multimodal Model-Based Synthetic Image Detection with Artifact Explanation](https://arxiv.org/pdf/2503.14905)
 
-Siwei Wen, Junyan Ye, Peilin Feng, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu, Wenjun Wu, Conghui He<sup>✉</sup>, Weijia Li<sup>✉</sup>
+Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu, Wenjun Wu, Conghui He<sup>✉</sup>, Weijia Li<sup>✉</sup>
 
 # 💡 Contribution
 - Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
@@ -55,9 +55,9 @@ Siwei Wen, Junyan Ye, Peilin Feng, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Universal Approximation Theorem of Networks Activated by Normalization](./profiles/paper/UniversalApproximation.pdf)
+[LEGION: Learning to Ground and Explain for Synthetic Image Detection](https://arxiv.org/pdf/2503.15264)
 
-Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
+Hengrui Kang, Siwei Wen, Zichen Wen, Junyan Ye, Weijia Li, **Peilin Feng**, Baichuan Zhou, Bin Wang, Dahua Lin, Linfeng Zhang<sup>✉</sup>, Conghui He<sup>✉</sup>
 
 # 💡 Contribution
 - Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
