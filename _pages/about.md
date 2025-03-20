@@ -52,7 +52,7 @@ Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jian
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/legion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [LEGION: Learning to Ground and Explain for Synthetic Image Detection](https://arxiv.org/pdf/2503.15264)
