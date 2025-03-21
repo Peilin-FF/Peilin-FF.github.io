@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Peilin Feng (冯沛林), an undergraduate student at **Beihang University**(2021-2025), majoring in **Automation Science and Electrical Engineering** with a minor in **Mathematical Sciences**. Under the supervision of [Professor Lei Huang](https://huangleibuaa.github.io/), I am currently focusing on Deep neural network architecture design and Multimodal Understanding. In the future, I will contribute to project [Tiny-Llava](https://github.com/TinyLLaVA/TinyLLaVA_Factory), where I aim to explore text and image modeling.
+My name is Peilin Feng (冯沛林), an undergraduate student at **Beihang University**(2021-2025), majoring in **Automation Science and Electrical Engineering** with a minor in **Mathematical Sciences**. Under the supervision of [Professor Lei Huang](https://huangleibuaa.github.io/), I am currently focusing on Deep neural network architecture design and Multimodal Understanding. In the future, I hope to work on vllm and agent. My ultimate goal is to make AI better serve our lives.
 
 I also have a deep passion for mathematics. I serve as a teaching assistant for the Mathematical Analysis for Engineering course. My responsibilities include grading homework, answering students' questions, and leading review lectures.
 Outside of my academic and research interests, I enjoy playing ping pong 🏓 and swimming 🤿. In my leisure time, I like to listen to some music 🎵 and watch my favorite cartoon Doraemon 📺 for relax.
