@@ -97,9 +97,9 @@ Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenju
 </div>
 </div>
 
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div> -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 3,3,2</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1"> -->
+<div class='paper-box-text' markdown="1">
 
 [Bench-CoE: a Framework for Collaboration of Experts from Benchmark](https://arxiv.org/pdf/2412.04167)
 
