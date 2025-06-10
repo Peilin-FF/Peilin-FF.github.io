@@ -38,9 +38,10 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1"> -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 4,2,1</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
 [Spot the Fake: Large Multimodal Model-Based Synthetic Image Detection with Artifact Explanation](https://arxiv.org/pdf/2503.14905)
 
 Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu, Wenjun Wu, Conghui He<sup>✉</sup>, Weijia Li<sup>✉</sup>
@@ -51,9 +52,10 @@ Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jian
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/legion.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICCV 2025</div><img src='images/paper/legion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1"> -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 5,4,4</div><img src='images/paper/legion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
 [LEGION: Learning to Ground and Explain for Synthetic Image Detection](https://arxiv.org/pdf/2503.15264)
 
 Hengrui Kang, Siwei Wen, Zichen Wen, Junyan Ye, Weijia Li, **Peilin Feng**, Baichuan Zhou, Bin Wang, Dahua Lin, Linfeng Zhang<sup>✉</sup>, Conghui He<sup>✉</sup>
@@ -64,9 +66,10 @@ Hengrui Kang, Siwei Wen, Zichen Wen, Junyan Ye, Weijia Li, **Peilin Feng**, Baic
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICML 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICML 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1"> -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 4,2,1</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
 [Universal Approximation Theorem of Networks Activated by Normalization](./profiles/paper/UniversalApproximation.pdf)
 
 Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
@@ -78,7 +81,9 @@ Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenju
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICML 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review ICML 2025</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1"> -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 3,2,2,2</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Empirical Study on Normalization in Mamba](./profiles/paper/Mamba.pdf)
@@ -92,7 +97,8 @@ Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenju
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div> -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 3,3,2</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Bench-CoE: a Framework for Collaboration of Experts from Benchmark](https://arxiv.org/pdf/2412.04167)
