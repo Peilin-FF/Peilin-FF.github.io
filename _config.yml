@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Peilin Feng"
-  avatar           : "images/picture1.jpg"
+  avatar           : "images/picture.jpg"
   bio              : "Beijing University of Aeronautics and Astronautics"
   location         : "Beijing, China"
   employer         : #"Beijing University of Aeronautics and Astronautics"
