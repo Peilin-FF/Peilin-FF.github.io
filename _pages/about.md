@@ -30,7 +30,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
-- *2025.06*: &nbsp;♥️♥️ I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
+- *2025.06*: &nbsp;🎓🎓 I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
 - *2025.06*: &nbsp;🎉🎉 Our paper LEGION was accepted at ICCV 2025.
 - *2025.03*: &nbsp;🎉🎉 I successfully submitted two papers to ICCV 2025, wishing good results.
 - *2025.02*: &nbsp;🎉🎉 I successfully submitted two papers to ICML 2025, wishing good results.
