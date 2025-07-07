@@ -116,7 +116,7 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 
 
 # 🎖 Honors and Awards
-- *2025.06* Outstanding undergraduate graduate of Beihang University
+- *2025.06* Outstanding undergraduate graduate of Beihang University(top3%)
 - *2024.12* Grand prize for Contests Scholarship in Beihang University
 - *2023.12* Outstanding student cadres
 - *2023.12* First Prize in the Chinese Mathematics Competition
