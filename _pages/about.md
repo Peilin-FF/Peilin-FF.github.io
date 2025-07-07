@@ -46,7 +46,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 <div class='paper-box-text' markdown="1"> -->
 [Spot the Fake: Large Multimodal Model-Based Synthetic Image Detection with Artifact Explanation](https://arxiv.org/pdf/2503.14905)
 
-Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu, Wenjun Wu, Conghui He<sup>✉</sup>, Weijia Li<sup>✉</sup>
+Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu, Wenjun Wu, Conghui He, Weijia Li<sup>✉</sup>
 
 # 💡 Contribution
 - Introduced FakeClue, a comprehensive dataset containing over 100,000 synthetic and real images across seven categories, annotated with fine-grained artifact clues in natural language.
@@ -60,7 +60,7 @@ Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jian
 <div class='paper-box-text' markdown="1"> -->
 [LEGION: Learning to Ground and Explain for Synthetic Image Detection](https://arxiv.org/pdf/2503.15264)
 
-Hengrui Kang, Siwei Wen, Zichen Wen, Junyan Ye, Weijia Li, **Peilin Feng**, Baichuan Zhou, Bin Wang, Dahua Lin, Linfeng Zhang<sup>✉</sup>, Conghui He<sup>✉</sup>
+Hengrui Kang, Siwei Wen, Zichen Wen, Junyan Ye, Weijia Li<sup>✉</sup>, **Peilin Feng**, Baichuan Zhou, Bin Wang, Dahua Lin, Linfeng Zhang, Conghui He<sup>✉</sup>
 
 # 💡 Contribution
 - Introduced SynthScars, a high-quality synthetic image detection dataset featuring diverse content types, fine-grained pixel-level artifact annotations, and detailed textual explanations.
