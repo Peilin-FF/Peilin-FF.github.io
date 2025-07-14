@@ -120,7 +120,8 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 - *2024.12* Grand prize for Contests Scholarship in Beihang University
 - *2023.12* Outstanding student cadres
 - *2023.12* First Prize in the Chinese Mathematics Competition
-- *2023.12* First Prize in Beijing Mathematics Competition (top 0.5% in Beijing)
+- *2023.12* First Prize in Beijing Mathematics Competition (114th among 20000+ students)
+
 - *2023.12* Second Prize for Contests Scholarship in Beihang University
 - *2023.12* Second Prize in China Undergraduate Mathematical Contest in Modeling
 - *2023.09* Outstanding Teaching Assistant in Mathematical Analysis(6/32)
