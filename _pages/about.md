@@ -40,7 +40,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review Neurips 2025</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 4,2,1</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
@@ -88,14 +88,14 @@ Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenju
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 3,2,2,2</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
 
-[An Empirical Study on Normalization in Mamba](./profiles/paper/Mamba.pdf)
+[Layer-Wise Analysis in Exploring the Normalization Strategies in Mamba](./profiles/paper/Mamba.pdf)
 
-**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Zekun Li, Lizhong Ding, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
+**Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Junle Wang, zhangkui, Wenjun Wu, Lei Huang<sup>✉</sup>
 
 # 💡 Contribution
-- Explored the effects of normalization type, position, and combination for Mamba architecture
-- Integrated extra normalization combinations before and after the SSM layer, significantly enhancing performance and training stability.
-- Provided intuitions on combination selection to improve the training dynamic
+- We track the spectral norms and maximum singular values of covariance matrices in Mamba to demonstrate the critical role of Norm2 in stabilizing training. 
+- We track the condition number of K-FAC in Mamba to demonstrate the critical role of Norm1 in improving optimization.
+- We proposed a composite normalization strategy and evaluate its effectiveness across diverse tasks,including sequence modeling, NLP & CV
 </div>
 </div>
 
@@ -166,4 +166,7 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 </div>
 
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=fffdf2&w=200&t=tt&d=mMK1rjT3slhtqW6EXqn3Wn268ziG6LZDCL41dnwmln0&co=0d4974&cmo=0d73fb&cmn=ff0000&ct=fbf1ec'></script>
+
+# ✏️ Community Service
+- Conference Reviewer: AAAI
 <!-- <a href="https://clustrmaps.com/site/1c1tr"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=mMK1rjT3slhtqW6EXqn3Wn268ziG6LZDCL41dnwmln0&cl=ffffff" /></a> -->
