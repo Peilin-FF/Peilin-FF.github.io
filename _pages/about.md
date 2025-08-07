@@ -93,7 +93,7 @@ Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenju
 **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Junle Wang, zhangkui, Wenjun Wu, Lei Huang<sup>✉</sup>
 
 # 💡 Contribution
-- We track the spectral norms and maximum singular values of covariance matrices in Mamba to demonstrate the critical role of Norm2 in stabilizing training. 
+- We track the spectral norms and singular values of covariance matrices in Mamba to demonstrate the critical role of Norm2 in stability.
 - We track the condition number of K-FAC in Mamba to demonstrate the critical role of Norm1 in improving optimization.
 - We proposed a composite normalization strategy and evaluate its effectiveness across diverse tasks,including sequence modeling, NLP & CV
 </div>
