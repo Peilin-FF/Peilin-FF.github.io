@@ -30,9 +30,9 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
-- *2025.09*: &nbsp;🎉🎉 Our paper Spot the Fake was accepted at NeurIPS.
+- *2025.09*: &nbsp;🎉🎉 Our paper Spot the Fake was accepted at <font color=Crimson>NeurIPS (Poster)</font>.
 - *2025.06*: &nbsp;🎓🎓 I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
-- *2025.06*: &nbsp;🎉🎉 Our paper LEGION was accepted at ICCV (Highlight).
+- *2025.06*: &nbsp;🎉🎉 Our paper LEGION was accepted at <font color=Crimson>ICCV (Highlight)</font>.
 - *2025.03*: &nbsp;🎉🎉 I successfully submitted two papers to ICCV 2025, wishing good results.
 - *2025.02*: &nbsp;🎉🎉 I successfully submitted two papers to ICML 2025, wishing good results.
 - *2025.01*: &nbsp;😊😊 I am excited to gain the opportunity to intern with the Multimodal Group at the Shanghai National AI Lab from Feb. 2025. I look forward to collaborating with like-minded mentors and peers on interesting and meaningful work.
