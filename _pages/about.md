@@ -30,17 +30,17 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
+- *2025.09*: &nbsp;🎉🎉 Our paper Spot the Fake was accepted at NeurIPS.
 - *2025.06*: &nbsp;🎓🎓 I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
-- *2025.06*: &nbsp;🎉🎉 Our paper LEGION was accepted at ICCV 2025.
+- *2025.06*: &nbsp;🎉🎉 Our paper LEGION was accepted at ICCV (Highlight).
 - *2025.03*: &nbsp;🎉🎉 I successfully submitted two papers to ICCV 2025, wishing good results.
 - *2025.02*: &nbsp;🎉🎉 I successfully submitted two papers to ICML 2025, wishing good results.
 - *2025.01*: &nbsp;😊😊 I am excited to gain the opportunity to intern with the Multimodal Group at the Shanghai National AI Lab from Feb. 2025. I look forward to collaborating with like-minded mentors and peers on interesting and meaningful work.
 - *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fightning💪!
-- *2024.11*: &nbsp;🍀🍀 I'm currently chasing after a position to pursue my doctoral degree and would appreciate your valuable consideration. Thank you!
-- *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a woderful start to my research career. I hope I will be more excellent in the future. 
+- *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a milestone to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 4,2,1</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
@@ -54,7 +54,7 @@ Siwei Wen, Junyan Ye, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jian
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025 Accepted</div><img src='images/paper/legion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV Highlight</div><img src='images/paper/legion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 5,4,4</div><img src='images/paper/legion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
@@ -68,7 +68,7 @@ Hengrui Kang, Siwei Wen, Zichen Wen, Junyan Ye, Weijia Li<sup>✉</sup>, **Peili
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review Neurips 2025</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 4,2,1</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
@@ -83,7 +83,7 @@ Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenju
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Revision</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 3,2,2,2</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
@@ -100,7 +100,7 @@ Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenju
 </div>
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div> -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review Neurips 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Bench-CoE: a Framework for Collaboration of Experts from Benchmark](https://arxiv.org/pdf/2412.04167)
