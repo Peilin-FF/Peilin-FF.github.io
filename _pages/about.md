@@ -47,7 +47,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 **Peilin Feng**<sup>†</sup>, Zhutao Lv<sup>†</sup>, Junyan Ye, Xiaolei Wang, Xinjie Huo, Jinhua Yu, Wanghan Wu, Wenlong Zhang, Lei Bai, Conghui He, Weijia Li<sup>✉</sup>
 
-# 💡 Contribution 
+# 💡 Contribution [![GitHub Stars](https://img.shields.io/github/stars/Peilin-FF/Earth-Agent?style=social)](https://github.com/Peilin-FF/Earth-Agent/stargazers)
 - We propose Earth-Agent, a revolutionary paradigm shift from traditional MLLMs to agentic EO analysis, unifying RGB and spectral EO data within an MCP-based tool ecosystem
 - In order to comprehensivly evaluate Earth-Agent, we propose Earth-Bench, which covers *Spectrum*, *Products* and *RGB* modality for scientific workflows requring tool interaction,
 - Earth-Agent substantially outperforms general agents and surpasses remote sensing MLLMs on remote sensing benchmarks, demonstrating both effectiveness and potential for advancing EO research
@@ -107,7 +107,7 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 
 Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†</sup>, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang<sup>✉</sup>, Wenjun Wu<sup>✉</sup>
 
-# 💡 Contribution
+# 💡 Contribution [![GitHub Stars](https://img.shields.io/github/stars/ZhangXJ199/Bench-CoE?style=social)](https://github.com/opendatalab/ZhangXJ199/Bench-CoE)
 - We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
 - We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
 </div>
