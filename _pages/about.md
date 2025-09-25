@@ -35,7 +35,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2025.06*: &nbsp;🎓🎓 I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
 - *2025.06*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>LEGION</font> was accepted at <font color=Crimson>ICCV (Highlight)</font>.
 - *2025.01*: &nbsp;😊😊 I am excited to gain the opportunity to intern with the Multimodal Group at the **<font color=PaleVioletRed>Shanghai National AI Lab</font>** from Feb. 2025. I look forward to collaborating with like-minded mentors and peers on interesting and meaningful work.
-- *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fightning💪!
+- *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fighting💪!
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025 <font color=MediumVioletRed>(First Author)</font>, marking a milestone to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
@@ -80,19 +80,18 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 - Introduced SynthScars, a high-quality synthetic image detection dataset featuring diverse content types, fine-grained pixel-level artifact annotations, and detailed textual explanations.
 - Proposed LEGION: a multimodal large language model-based framework for artifact localization, explanation generation, and forgery detection, enhancing interpretability in synthetic image analysis.
 </div>
+</div>
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1"> -->
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 4,2,1</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1"> -->
-<!-- [Universal Approximation Theorem of Networks Activated by Normalization](./profiles/paper/UniversalApproximation.pdf)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 4,2,1</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Universal Approximation Theorem of Networks Activated by Normalization](./profiles/paper/UniversalApproximation.pdf)
 
-<!-- Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup> -->
+Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
 
-<!-- # 💡 Contribution -->
-<!-- - Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization. -->
-<!-- - Compared the nonlinearity and optimization capability of PLN in time series prediction tasks. -->
-<!-- - Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization. --> -->
+# 💡 Contribution
+- Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
+- Compared the nonlinearity and optimization capability of PLN in time series prediction tasks.
+- Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization.
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
@@ -137,9 +136,9 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 - *2023.12* Second Prize for Contests Scholarship in Beihang University
 - *2023.12* Second Prize in China Undergraduate Mathematical Contest in Modeling
 - *2023.09* Outstanding Teaching Assistant in Mathematical Analysis(6/32)
-- *2023.06* Sencond Prize in Qixian Cup Robot Challenge Competition(4/32)
+- *2023.06* Second Prize in Qixian Cup Robot Challenge Competition(4/32)
 - *2022.12* First Prize Scholarship in Beihang University (top5%)
-- *2022.06* Sencond Prize in Feng Ru Cup Science and Technology Innovation Competition
+- *2022.06* Second Prize in Feng Ru Cup Science and Technology Innovation Competition
 
 
 # 📖 Educations
