@@ -62,7 +62,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 Siwei Wen<sup>†</sup>, Junyan Ye<sup>†</sup>, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu, Wenjun Wu, Conghui He, Weijia Li<sup>✉</sup>
 
-# 💡 Contribution [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/lingcco/FakeClue) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow)](https://huggingface.co/lingcco/fakeVLM)
+# 💡 Contribution [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/lingcco/FakeClue) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/FakeVLM?style=social)](https://github.com/opendatalab/FakeVLM/stargazers)
 - Introduced FakeClue, a comprehensive dataset containing over 100,000 synthetic and real images across seven categories, annotated with fine-grained artifact clues in natural language.
 - Proposed FakeVLM, a specialized large multimodal model for synthetic image and DeepFake detection, combining authenticity classification with natural language explanations of image artifacts.
 </div>
@@ -72,11 +72,11 @@ Siwei Wen<sup>†</sup>, Junyan Ye<sup>†</sup>, **Peilin Feng**, Hengrui Kang,
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 5,4,4</div><img src='images/paper/legion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
-[LEGION: Learning to Ground and Explain for Synthetic Image Detection](https://arxiv.org/pdf/2503.15264)
+[LEGION: Learning to Ground and Explain for Synthetic Image Detection](https://arxiv.org/pdf/2503.15264) 
 
 Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, Junyan Ye, Weijia Li<sup>✉</sup>, **Peilin Feng**, Baichuan Zhou, Bin Wang, Dahua Lin, Linfeng Zhang, Conghui He<sup>✉</sup>
 
-# 💡 Contribution
+# 💡 Contribution [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/khr0516/SynthScars) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/LEGION?style=social)](https://github.com/opendatalab/LEGION/stargazers)
 - Introduced SynthScars, a high-quality synthetic image detection dataset featuring diverse content types, fine-grained pixel-level artifact annotations, and detailed textual explanations.
 - Proposed LEGION: a multimodal large language model-based framework for artifact localization, explanation generation, and forgery detection, enhancing interpretability in synthetic image analysis.
 </div>
