@@ -30,6 +30,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
+- *2025.09*: &nbsp;🎉🎉 We released <font color=MediumVioletRed>Earth-Agent</font>, the first agent in the field of EO that can perform multi-step inference tasks on spectral and RGB data.
 - *2025.09*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>Spot the Fake</font> was accepted at <font color=Crimson>NeurIPS (Poster)</font>.
 - *2025.06*: &nbsp;🎓🎓 I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
 - *2025.06*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>LEGION</font> was accepted at <font color=Crimson>ICCV (Highlight)</font>.
