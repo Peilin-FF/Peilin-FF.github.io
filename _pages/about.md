@@ -82,17 +82,6 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 4,2,1</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Universal Approximation Theorem of Networks Activated by Normalization](./profiles/paper/UniversalApproximation.pdf)
-
-Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
-
-# 💡 Contribution
-- Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
-- Compared the nonlinearity and optimization capability of PLN in time series prediction tasks.
-- Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization.
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
