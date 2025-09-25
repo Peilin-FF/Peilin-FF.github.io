@@ -38,6 +38,21 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025, marking a milestone to my research career. I hope I will be more excellent in the future. 
 
 # 📝 Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/Earth-Agent.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 4,2,1</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1"> -->
+[Earth-Agent: Unlocking the Full Landscape of Earth Observation with Agents](./profiles/paper/Earth-Agent.pdf)
+
+**Peilin Feng**<sup>†</sup>, Zhutao Lv<sup>†</sup>, Junyan Ye, Xiaolei Wang, Xinjie Huo, Jinhua Yu, Wanghan Wu, Wenlong Zhang, Lei Bai, Conghui He, Weijia Li<sup>✉</sup>
+
+# 💡 Contribution
+- We propose a revolutionary paradigm shift from traditional MLLMs to agentic EO analysis, unifying RGB and spectral EO data within an MCP-based tool ecosystem
+- In order to comprehensivly evaluate Earth-Agent, we propose Earth-Bench, which covers *Spectrum*, *Products* and *RGB* modality for scientific workflows requring tool interaction,
+- Earth-Agent substantially outperforms general agents and surpasses remote sensing MLLMs on remote sensing benchmarks, demonstrating both effectiveness and potential for advancing EO research
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 4,2,1</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
@@ -66,19 +81,19 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1"> -->
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 4,2,1</div><img src='images/paper/pln.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
-[Universal Approximation Theorem of Networks Activated by Normalization](./profiles/paper/UniversalApproximation.pdf)
+<!-- [Universal Approximation Theorem of Networks Activated by Normalization](./profiles/paper/UniversalApproximation.pdf)
 
-Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup>
+<!-- Yunhao Ni,  Yuhe Liu, WenXin Sun, Yitong Tang, **Peilin Feng**, Yuxin Guo, Wenjun Wu<sup>✉</sup>, Lei Huang<sup>✉</sup> -->
 
-# 💡 Contribution
-- Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization.
-- Compared the nonlinearity and optimization capability of PLN in time series prediction tasks.
-- Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization.
-</div>
+<!-- # 💡 Contribution -->
+<!-- - Proposed Parallel Layer Normalization (PLN) to verify the universal approximation capability of normalization. -->
+<!-- - Compared the nonlinearity and optimization capability of PLN in time series prediction tasks. -->
+<!-- - Verified that PLN can serve as an activation function while compensating for the optimization capability of normalization. --> -->
+
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
