@@ -54,7 +54,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 4,2,1</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
