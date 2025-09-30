@@ -43,7 +43,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 4,2,1</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
-[Earth-Agent: Unlocking the Full Landscape of Earth Observation with Agents](./profiles/paper/Earth-Agent.pdf)
+[Earth-Agent: Unlocking the Full Landscape of Earth Observation with Agents](https://arxiv.org/pdf/2509.23141)
 
 **Peilin Feng**<sup>†</sup>, Zhutao Lv<sup>†</sup>, Junyan Ye, Xiaolei Wang, Xinjie Huo, Jinhua Yu, Wanghan Wu, Wenlong Zhang, Lei Bai, Conghui He, Weijia Li<sup>✉</sup>
 
