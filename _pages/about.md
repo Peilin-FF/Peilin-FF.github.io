@@ -47,7 +47,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 **Peilin Feng**<sup>†</sup>, Zhutao Lv<sup>†</sup>, Junyan Ye, Xiaolei Wang, Xinjie Huo, Jinhua Yu, Wanghan Wu, Wenlong Zhang, Lei Bai, Conghui He, Weijia Li<sup>✉</sup>
 
-# 💡 Contribution [<img src="images/earthagent.png" alt="Project" style="width:25px; height:auto;">](https://opendatalab.github.io/Earth-Agent/) [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/Sssunset/Earth-Bench) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/Earth-Agent?style=social)](https://github.com/opendatalab/Earth-Agent/stargazers)
+# 💡 Contribution [<img src="images/earthagent.png" alt="Project" style="width:25px; height:auto;">](https://opendatalab.github.io/Earth-Agent/) [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/Sssunset/Earth-Bench) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/Earth-Agent?style=social)](https://github.com/opendatalab/Earth-Agent/)
 - We propose Earth-Agent, a revolutionary paradigm shift from traditional MLLMs to agentic EO analysis, unifying RGB and spectral EO data within an MCP-based tool ecosystem
 - In order to comprehensivly evaluate Earth-Agent, we propose Earth-Bench, which covers *Spectrum*, *Products* and *RGB* modality for scientific workflows requring tool interaction,
 - Earth-Agent substantially outperforms general agents and surpasses remote sensing MLLMs on remote sensing benchmarks, demonstrating both effectiveness and potential for advancing EO research
@@ -62,7 +62,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 Siwei Wen<sup>†</sup>, Junyan Ye<sup>†</sup>, **Peilin Feng**, Hengrui Kang, Zichen Wen, Yize Chen, Jiang Wu, Wenjun Wu, Conghui He, Weijia Li<sup>✉</sup>
 
-# 💡 Contribution [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/lingcco/FakeClue) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/FakeVLM?style=social)](https://github.com/opendatalab/FakeVLM/stargazers)
+# 💡 Contribution [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/lingcco/FakeClue) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/FakeVLM?style=social)](https://github.com/opendatalab/FakeVLM/)
 - Introduced FakeClue, a comprehensive dataset containing over 100,000 synthetic and real images across seven categories, annotated with fine-grained artifact clues in natural language.
 - Proposed FakeVLM, a specialized large multimodal model for synthetic image and DeepFake detection, combining authenticity classification with natural language explanations of image artifacts.
 </div>
@@ -76,7 +76,7 @@ Siwei Wen<sup>†</sup>, Junyan Ye<sup>†</sup>, **Peilin Feng**, Hengrui Kang,
 
 Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, Junyan Ye, Weijia Li<sup>✉</sup>, **Peilin Feng**, Baichuan Zhou, Bin Wang, Dahua Lin, Linfeng Zhang, Conghui He<sup>✉</sup>
 
-# 💡 Contribution [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/khr0516/SynthScars) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/LEGION?style=social)](https://github.com/opendatalab/LEGION/stargazers)
+# 💡 Contribution [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/khr0516/SynthScars) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/LEGION?style=social)](https://github.com/opendatalab/LEGION/)
 - Introduced SynthScars, a high-quality synthetic image detection dataset featuring diverse content types, fine-grained pixel-level artifact annotations, and detailed textual explanations.
 - Proposed LEGION: a multimodal large language model-based framework for artifact localization, explanation generation, and forgery detection, enhancing interpretability in synthetic image analysis.
 </div>
