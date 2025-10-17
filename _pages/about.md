@@ -107,7 +107,7 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 
 Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†</sup>, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang<sup>✉</sup>, Wenjun Wu<sup>✉</sup>
 
-# 💡 Contribution [![GitHub Stars](https://img.shields.io/github/stars/ZhangXJ199/Bench-CoE?style=social)](https://github.com/opendatalab/ZhangXJ199/Bench-CoE)
+# 💡 Contribution [![GitHub Stars](https://img.shields.io/github/stars/ZhangXJ199/Bench-CoE?style=social)](https://github.com/ZhangXJ199/Bench-CoE)
 - We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
 - We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
 </div>
