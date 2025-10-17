@@ -47,7 +47,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 **Peilin Feng**<sup>†</sup>, Zhutao Lv<sup>†</sup>, Junyan Ye, Xiaolei Wang, Xinjie Huo, Jinhua Yu, Wanghan Wu, Wenlong Zhang, Lei Bai, Conghui He, Weijia Li<sup>✉</sup>
 
-# 💡 Contribution [![Website](images/earthagent.png) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/Earth-Agent?style=social)](https://github.com/opendatalab/Earth-Agent/stargazers)
+# 💡 Contribution [<img src="images/earthagent.png" alt="Website" style="width:20px; height:auto;">](https://huggingface.co/datasets/Sssunset/Earth-Bench) [![GitHub Stars](https://img.shields.io/github/stars/opendatalab/Earth-Agent?style=social)](https://github.com/opendatalab/Earth-Agent/stargazers)
 - We propose Earth-Agent, a revolutionary paradigm shift from traditional MLLMs to agentic EO analysis, unifying RGB and spectral EO data within an MCP-based tool ecosystem
 - In order to comprehensivly evaluate Earth-Agent, we propose Earth-Bench, which covers *Spectrum*, *Products* and *RGB* modality for scientific workflows requring tool interaction,
 - Earth-Agent substantially outperforms general agents and surpasses remote sensing MLLMs on remote sensing benchmarks, demonstrating both effectiveness and potential for advancing EO research
