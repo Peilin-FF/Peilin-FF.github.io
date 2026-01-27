@@ -30,7 +30,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
-- *2026.01*: &nbsp;🎉🎉 Our Paper <font color=CornflowerBlue>Earth-Agent</font> <font color=MediumVioletRed>(First Author)</font> was accepted at ICLR 2026!
+- *2026.01*: &nbsp;🎉🎉 Our Paper <font color=CornflowerBlue>Earth-Agent</font> <font color=MediumVioletRed>(First Author)</font> was accepted at <font color=Crimson>ICLR (Poster)</font>!
 - *2025.09*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>Spot the Fake</font> <font color=MediumVioletRed>(Second Author)</font> was accepted at <font color=Crimson>NeurIPS (Poster)</font>.
 - *2025.06*: &nbsp;🎓🎓 I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
 - *2025.06*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>LEGION</font> was accepted at <font color=Crimson>ICCV (Highlight)</font>.
