@@ -134,7 +134,7 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 # 📖 Educations
 
 - *2026.08 - 2030.06*, School of Electrical and Electronic Engineering, Nanyang Technological University, Singarpore. 
-- *2021.09 - 2025.06*, Automation Science (Major), Beihang University, Beijing, China.
+- *2021.09 - 2025.06*, Automation Science, Beihang University, Beijing, China.
 
 # 💬 Tutorial Materials in Teaching Assistant
 
