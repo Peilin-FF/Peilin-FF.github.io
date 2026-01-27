@@ -133,8 +133,8 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 
 # 📖 Educations
 
-- *2022.09 - 2025.06 (Expected)*, Mathematical Science (Minor), Beihang University, Beijing, China. 
-- *2021.09 - 2025.06 (Expected)*, Automation Science (Major), Beihang University, Beijing, China. 
+<!-- - *2022.09 - 2025.06*, Mathematical Science (Minor), Beihang University, Beijing, China.  -->
+- *2021.09 - 2025.06*, Automation Science (Major), Beihang University, Beijing, China. 
 
 # 💬 Tutorial Materials in Teaching Assistant
 
