@@ -88,7 +88,7 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 3,2,2,2</div><img src='images/paper/Normalization in Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
 
-[Layer-Wise Analysis in Exploring the Normalization Strategies in Mamba](./profiles/paper/Mamba.pdf)
+<!-- [Layer-Wise Analysis in Exploring the Normalization Strategies in Mamba](./profiles/paper/Mamba.pdf) -->
 
 <!-- **Peilin Feng**, Yuanshuai Wang, Yunhao Ni, Junle Wang, zhangkui, Wenjun Wu, Lei Huang<sup>✉</sup> -->
 
