@@ -30,7 +30,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
-- *2026.02*: &nbsp;😊😊 I am excited to intern at **<font color=MediumOrchid>Zhipu AutoGLM</font>****<font color=MediumOrchid>@Crimson</font>** from Feb. 2026, focusing on GUI-Agent and Post-training. Feel to have a  <font color=Peru>coffee chat</font> with me!
+- *2026.02*: &nbsp;😊😊 I am excited to intern at **<font color=MediumOrchid>Zhipu AutoGLM</font>****<font color=Crimson>@Geijing</font>** from Feb. 2026, focusing on GUI-Agent and Post-training. Feel to have a  <font color=Peru>coffee chat</font> with me!
 - *2026.01*: &nbsp;🎉🎉 Our Paper <font color=CornflowerBlue>Earth-Agent</font> <font color=MediumVioletRed>(First Author)</font> was accepted at <font color=Crimson>ICLR (Poster)</font>!
 - *2025.09*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>Spot the Fake</font> <font color=MediumVioletRed>(Second Author)</font> was accepted at <font color=Crimson>NeurIPS (Poster)</font>.
 - *2025.06*: &nbsp;🎓🎓 I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
