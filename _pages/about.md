@@ -30,6 +30,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
+- *2026.05*: &nbsp;🎉🎉 I am excited to join in [Declare Lab @ NTU](https://declare-lab.github.io/) supervised by Prof. [Soujanya](https://scholar.google.co.in/citations?hl=en&user=oS6gRc4AAAAJ&view_op=list_works) to persue my PhD degree. Great new journey!
 - *2026.02*: &nbsp;😊😊 I am excited to intern at **<font color=MediumOrchid>Zhipu AutoGLM</font>**<font color=CadetBlue>@Beijing</font> from Feb. 2026, focusing on GUI-Agent and Post-training. Feel to have a  <font color=Peru>coffee chat</font> with me!
 - *2026.01*: &nbsp;🎉🎉 Our Paper <font color=CornflowerBlue>Earth-Agent</font> <font color=MediumVioletRed>(First Author)</font> was accepted at <font color=Crimson>ICLR (Poster)</font>!
 - *2025.09*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>Spot the Fake</font> <font color=MediumVioletRed>(Second Author)</font> was accepted at <font color=Crimson>NeurIPS (Poster)</font>.
@@ -132,7 +133,7 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 
 # 📖 Educations
 
-<!-- - *2026.08 - 2030.06(Expected)*, School of Electrical and Electronic Engineering, NTU, Singarpore.  -->
+- *2026.08 - 2030.06*, School of Electrical and Electronic Engineering, NTU, Singarpore. 
 - *2021.09 - 2025.06*, Automation Science, Beihang University, Beijing, China.
 
 # 💬 Tutorial Materials in Teaching Assistant
@@ -151,6 +152,12 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 
 
 # 💻 Internships
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/zhipu.png' alt="ZHIPU" width="40%" style="margin-bottom: 0;"></div></div>
+<div class='paper-box-text' markdown="1" style="margin-top: -20px; margin-left: -15em;">
+
+- *2025.02 - Present*, [Zhipu AutoGLM](https://www.zhipuai.cn/zh/research/145), Beijing, China.
+</div>
+</div>
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/shlab.png' alt="SHLAB" width="40%" style="margin-bottom: 0;"></div></div>
 <div class='paper-box-text' markdown="1" style="margin-top: -20px; margin-left: -15em;">
 
