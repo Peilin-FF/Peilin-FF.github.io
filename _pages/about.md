@@ -30,7 +30,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
-- *2026.05*: &nbsp;🎉🎉 I am excited to join in [Declare Lab @ NTU](https://declare-lab.github.io/) supervised by Prof. [Soujanya](https://scholar.google.co.in/citations?hl=en&user=oS6gRc4AAAAJ&view_op=list_works) to persue my PhD degree. Great new journey!
+- *2026.05*: &nbsp;🎉🎉 I am excited to join in [Declare Lab @ NTU](https://declare-lab.github.io/) supervised by Prof. [Soujanya Poria](https://scholar.google.co.in/citations?hl=en&user=oS6gRc4AAAAJ&view_op=list_works) to persue my PhD degree. Great new journey!
 - *2026.02*: &nbsp;😊😊 I am excited to intern at **<font color=MediumOrchid>Zhipu AutoGLM</font>**<font color=CadetBlue>@Beijing</font> from Feb. 2026, focusing on GUI-Agent and Post-training. Feel to have a  <font color=Peru>coffee chat</font> with me!
 - *2026.01*: &nbsp;🎉🎉 Our Paper <font color=CornflowerBlue>Earth-Agent</font> <font color=MediumVioletRed>(First Author)</font> was accepted at <font color=Crimson>ICLR (Poster)</font>!
 - *2025.09*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>Spot the Fake</font> <font color=MediumVioletRed>(Second Author)</font> was accepted at <font color=Crimson>NeurIPS (Poster)</font>.
