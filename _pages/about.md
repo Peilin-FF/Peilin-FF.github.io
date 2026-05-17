@@ -155,13 +155,13 @@ Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†<
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/zhipu.png' alt="ZHIPU" width="30%" style="margin-bottom: 0;"></div></div>
 <div class='paper-box-text' markdown="1" style="margin-top: -20px; margin-left: -15em;">
 
-- *2025.02 - Present*, [Zhipu AutoGLM](https://www.zhipuai.cn/zh/research/145), Beijing, China.
+- *2026.02 - Present*, [Zhipu AutoGLM](https://www.zhipuai.cn/zh/research/145), Beijing, China.
 </div>
 </div>
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/shlab.png' alt="SHLAB" width="40%" style="margin-bottom: 0;"></div></div>
 <div class='paper-box-text' markdown="1" style="margin-top: -20px; margin-left: -15em;">
 
-- *2025.02 - Present*, [Shanghai National AI Lab](https://www.shlab.org.cn/), Shanghai, China.
+- *2025.02 - 2025.08*, [Shanghai National AI Lab](https://www.shlab.org.cn/), Shanghai, China.
 </div>
 </div>
 
