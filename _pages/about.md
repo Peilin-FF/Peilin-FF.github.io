@@ -176,6 +176,9 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 </div>
 </div>
 
+# 📒 Notes
+- *2026.10*: &nbsp;[BaRe-Mem: Bayesian Reliability Memory for Robust and Adaptive Agent Consultation](/notes/bare-mem/). When advisors can be wrong, a central model needs to know whom to trust and whether to consult at all.
+
 # ✏️ Community Service
 - Conference Reviewer: AAAI, ICLR workshop, Neurips
 <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=zPzVmHbYMKiKoDeQ37f2Y60SWu9aiDwmXLD4moLgquc&cl=ffffff&w=200"></script>
