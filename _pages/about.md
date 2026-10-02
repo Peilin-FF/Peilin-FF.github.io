@@ -38,8 +38,11 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2025.06*: &nbsp;🎓🎓 I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
 - *2025.06*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>LEGION</font> was accepted at <font color=Crimson>ICCV (Highlight)</font>.
 - *2025.01*: &nbsp;😊😊 I am excited to gain the opportunity to intern with the Multimodal Group at the **<font color=PaleVioletRed>Shanghai National AI Lab</font>** from Feb. 2025. I look forward to collaborating with like-minded mentors and peers on interesting and meaningful work.
-<!-- - *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fighting💪!
-- *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025 <font color=MediumVioletRed>(First Author)</font>, marking a milestone to my research career. I hope I will be more excellent in the future.  -->
+
+<!--
+- *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fighting💪!
+- *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025 <font color=MediumVioletRed>(First Author)</font>, marking a milestone to my research career. I hope I will be more excellent in the future.
+-->
 
 # 📝 Publications
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/paper/BaRe-Mem.png' alt="sym" width="100%"></div></div>
