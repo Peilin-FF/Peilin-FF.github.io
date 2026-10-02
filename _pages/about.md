@@ -30,6 +30,7 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 
 
 # 🔥 News
+- *2026.09*: &nbsp;🔥🔥 We release <font color=CornflowerBlue>BaRe-Mem</font> <font color=MediumVioletRed>(First Author)</font>, a Bayesian reliability memory for robust and adaptive agent consultation. Check out the [paper](https://arxiv.org/abs/2609.35551), [code](https://github.com/declare-lab/BaRe-Mem) and [project page](https://huggingface.co/spaces/Sssunset/BaRe-Mem)!
 - *2026.05*: &nbsp;🎉🎉 I am excited to join in [Declare Lab @ NTU](https://declare-lab.github.io/) supervised by Prof. [Soujanya Poria](https://scholar.google.co.in/citations?hl=en&user=oS6gRc4AAAAJ&view_op=list_works) to persue my PhD degree. Great new journey!
 - *2026.02*: &nbsp;😊😊 I am excited to intern at **<font color=MediumOrchid>Zhipu AutoGLM</font>**<font color=CadetBlue>@Beijing</font> from Feb. 2026, focusing on GUI-Agent and Post-training. Feel to have a  <font color=Peru>coffee chat</font> with me!
 - *2026.01*: &nbsp;🎉🎉 Our Paper <font color=CornflowerBlue>Earth-Agent</font> <font color=MediumVioletRed>(First Author)</font> was accepted at <font color=Crimson>ICLR (Poster)</font>!
@@ -37,10 +38,24 @@ However, artificial intelligence is developing rapidly, so I always hope to be a
 - *2025.06*: &nbsp;🎓🎓 I reveived my bachelor's degree at Beihang University, thanks to my teachers and friends, miss you!
 - *2025.06*: &nbsp;🎉🎉 Our paper <font color=CornflowerBlue>LEGION</font> was accepted at <font color=Crimson>ICCV (Highlight)</font>.
 - *2025.01*: &nbsp;😊😊 I am excited to gain the opportunity to intern with the Multimodal Group at the **<font color=PaleVioletRed>Shanghai National AI Lab</font>** from Feb. 2025. I look forward to collaborating with like-minded mentors and peers on interesting and meaningful work.
-- *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fighting💪!
-- *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025 <font color=MediumVioletRed>(First Author)</font>, marking a milestone to my research career. I hope I will be more excellent in the future. 
+<!-- - *2024.12*: &nbsp;😭😭 My first paper to ICLR 2025 was unfortunately rejected. While it's true that most people's first submission is full of ups and downs, I still feel quite heartbroken. I hope my revised version will stand out at ICML. Fighting💪!
+- *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025 <font color=MediumVioletRed>(First Author)</font>, marking a milestone to my research career. I hope I will be more excellent in the future.  -->
 
 # 📝 Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/paper/BaRe-Mem.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[BaRe-Mem: Bayesian Reliability Memory for Robust and Adaptive Agent Consultation](https://arxiv.org/pdf/2609.35551)
+
+**Peilin Feng**, Zhengyang Huang, Soujanya Poria<sup>✉</sup>
+
+# 💡 Contribution [![Project Page](https://img.shields.io/badge/Project-Page-2a6fc4)](https://huggingface.co/spaces/Sssunset/BaRe-Mem) [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/Sssunset/BaRe-Mem-Data) [![GitHub Stars](https://img.shields.io/github/stars/declare-lab/BaRe-Mem?style=social)](https://github.com/declare-lab/BaRe-Mem)
+- We propose BaRe-Mem, an online Bayesian reliability memory for multi-agent consultation that estimates advisor reliability from the central model's internal belief representations and updates it from verified outcomes.
+- The reliability estimates modulate the influence of advisor responses and decide between consultation and autonomous reasoning.
+- Across nine benchmarks and six central models, BaRe-Mem is more robust to misleading advisors than debate and majority voting, and it improves worker allocation in agent teams on MuSiQue.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/paper/Earth-Agent.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/paper/fakevlm.jpg' alt="sym" width="100%"></div></div>
@@ -100,20 +115,6 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 - We proposed a composite normalization strategy and evaluate its effectiveness across diverse tasks,including sequence modeling, NLP & CV -->
 <!-- </div>
 </div> -->
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review CVPR 2025</div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div> -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/paper/benchcoe.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Bench-CoE: a Framework for Collaboration of Experts from Benchmark](https://arxiv.org/pdf/2412.04167)
-
-Yuanshuai Wang<sup>†</sup>, Xingjian Zhang<sup>†</sup>, Jinkun Zhao<sup>†</sup>, Siwei Wen, **Peilin Feng**, Shuhao Liao, Lei Huang<sup>✉</sup>, Wenjun Wu<sup>✉</sup>
-
-# 💡 Contribution [![GitHub Stars](https://img.shields.io/github/stars/ZhangXJ199/Bench-CoE?style=social)](https://github.com/ZhangXJ199/Bench-CoE)
-- We proposed a novel framework for Bench-CoE that relies solely on the Benchmark when training the router.
-- We comprehensively evaluated the performance and generalization ability of our Bench-CoE model across three stages: Naive, In-distribution, and Out-of-distribution.
-</div>
-</div>
 
 
 
