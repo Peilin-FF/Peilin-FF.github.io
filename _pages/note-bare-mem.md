@@ -1,138 +1,318 @@
 ---
 layout: note
 permalink: /notes/bare-mem/
-title: "BaRe-Mem: Bayesian Reliability Memory for Robust and Adaptive Agent Consultation"
-excerpt: "When advisors can be wrong, a central model needs to know whom to trust and whether to consult at all."
+title: "A Visual Guide to BaRe-Mem"
+excerpt: "The mathematics behind a Bayesian reliability memory, built up one equation at a time, with figures you can play with."
 image: /images/notes/bare-mem/fig1_memory_update.png
+math: true
+widgets: /assets/js/notes/bare-mem.js
 author_profile: false
 ---
 
-<p class="note-kicker">Note</p>
+<p class="note-kicker">Note · BaRe-Mem</p>
 
-<h1 class="note-title">BaRe-Mem: Bayesian Reliability Memory for Robust and Adaptive Agent Consultation</h1>
+<h1 class="note-title">A Visual Guide to BaRe-Mem</h1>
 
-<p class="note-dek">When advisors can be wrong, a central model needs to know two things: whom to trust, and whether to consult at all. BaRe-Mem learns both from verified outcomes.</p>
+<p class="note-dek">The mathematics behind a Bayesian reliability memory, built up one equation at a time, with figures you can play with.</p>
 
-<p class="note-meta"><b>Peilin Feng</b> · October 2, 2026 · 8 min read · Multi-Agent Consultation</p>
+<p class="note-meta"><b>Peilin Feng</b> · October 2, 2026 · 15 min read · Multi-Agent Consultation</p>
 
 <p class="note-links"><a href="https://arxiv.org/abs/2609.35551">Paper</a><a href="https://github.com/declare-lab/BaRe-Mem">GitHub</a><a href="https://huggingface.co/spaces/Sssunset/BaRe-Mem">Project page</a><a href="https://huggingface.co/datasets/Sssunset/BaRe-Mem-Data">Dataset</a></p>
 
-<figure class="note-fig">
-  <a href="/images/notes/bare-mem/fig1_memory_update.png"><img src="/images/notes/bare-mem/fig1_memory_update.png" alt="Reliability of two candidates before and after three verified answers"></a>
-  <figcaption>Two candidates start with the same reliability. After candidate 1 is verified right, right and then wrong, its estimate moves to the red and then the blue posterior; candidate 2, never checked, stays where it was. The gains are the Kalman gains of each update.</figcaption>
-</figure>
+The paper describes the pipeline and the experiments. This note is about something a paper can only state in passing: why the mathematics works. Everything BaRe-Mem does (trusting one advisor over another, steering attention, deciding whether to consult at all) comes out of a single Bayesian linear regression and a few lines of algebra. I will build it up one piece at a time. Most figures are interactive: click, drag, and watch the equations move.
 
-Look at panel (b) above. Before any evidence, both candidates sit at a reliability of one half. Candidate 1 then gives two answers that turn out to be right, and its estimate rises to 0.68. A third answer turns out to be wrong, and it falls back to 0.58. Candidate 2 was never checked, so nothing about it changes.
+Here is what we want. For every candidate answer $$k$$ to a question $$q_t$$, a number $$p_{t,k}$$: the probability that this answer is right. That number should
 
-That small picture is the whole mechanism. Reliability is something you can keep track of, one verified answer at a time, and how far each answer moves the estimate depends on how uncertain the estimate still is: the three steps above have gains of 0.36, 0.26 and 0.21.
+- start neutral, before anything has been verified;
+- update **exactly** after each verified outcome, without retraining anything;
+- know **how uncertain** it is;
+- be usable for two decisions: how much to listen to each advisor, and whether to listen at all.
 
-In this note, I want to focus on a question that this kind of bookkeeping raises but cannot answer on its own: once a model knows which advisor to trust most, how does it know whether it should be listening to its advisors at all?
+## Part 1: Reliability as a regression problem
 
-## Why does consultation need a memory?
+### The candidates
 
-More and more AI systems are built as groups of agents: a central model that can consult other models, tools or people before it answers. Consultation helps when the advisors know something the central model does not. It hurts when they do not, and it can hurt a lot. A fluent, confident, wrong answer can pull a model away from an answer it had right, and several advisors agreeing does not make them correct if they all fall for the same plausible mistake.
+For question $$q_t$$, the central model $$M$$ can read $$K$$ advisor answers. BaRe-Mem adds one more candidate: $$M$$'s own autonomous answer $$a_{t,0}$$, produced without consultation. That answer is never shown to $$M$$ as advice. It is there so that the memory also learns how good $$M$$ is on its own, which we will need in Part 5.
 
-Advisors are also uneven. A model that is reliable on arithmetic may be poor at reading comprehension. So the useful question is never "is this advisor good?" but "is this advisor good on questions like this one?"
+### Representing a candidate
 
-A history of past interactions contains that information. The difficulty is turning it into something that can act on the current decision. Keeping transcripts or summaries preserves the history, but it does not tell the central model how much weight to give each answer it is reading right now.
+The frozen central model reads the question together with candidate $$k$$, and its hidden states give two kinds of belief: a **question belief** $$\psi_q(t)$$, shared by all candidates of the question, and an **answer content belief** $$\psi_c(t,k)$$, specific to the candidate. BaRe-Mem stacks them into one vector:
 
-## What BaRe-Mem keeps track of
+$$
+x_{t,k} = \big[\, e_k \otimes \psi_q(t) \;;\; \psi_c(t,k) \;;\; 1 \,\big]
+$$
 
-BaRe-Mem stores reliability as the posterior of a Bayesian linear regression. For each question, the frozen central model reads the question together with every candidate answer, and its hidden states give two kinds of features: what the question looks like, and what each answer says. Every candidate gets a score made of three parts: how reliable its source has been on similar questions, what the content of its answer suggests, and a constant.
+Here $$e_k$$ is the one-hot identity of the candidate's source. The Kronecker product $$e_k \otimes \psi_q(t)$$ is a long vector with one block per source; the question features go into the block of source $$k$$ and every other block is zero. Pick a candidate below and watch which block lights up.
 
-Each verified outcome updates this posterior exactly, with a rank-one Kalman update; nothing is recomputed from scratch. The estimate for a question is always read before that question's outcome is written, so it only ever uses earlier evidence.
+<div class="widget narrow" id="w-anatomy">
+  <p class="w-title">Figure 1 · Anatomy of a candidate</p>
+  <p class="w-sub">The same question features land in a different block for each source, so each source is scored by its own weights.</p>
+</div>
 
-One detail matters for the rest of this note. The candidates include not only the advisors but also the central model's own answer, produced without consultation. That answer is never shown to the model as advice. It is there so that the memory also learns how good the central model is on its own: an estimate I will call κ.
+Multiply by a weight vector $$w$$ laid out the same way, and the score splits into three readable parts:
 
-## Whom to trust: reweight attention, not the prompt
+$$
+w^\top x_{t,k} \;=\; \underbrace{w_k^\top \psi_q(t)}_{\text{source reliability}} \;+\; \underbrace{w_c^\top \psi_c(t,k)}_{\text{answer content reliability}} \;+\; \underbrace{w_0}_{\text{bias}}
+$$
 
-The first use of the estimates is to change how much each advisor's answer influences the central model. Inside every attention head, the scores on an advisor's tokens are shifted by γ times the log of that advisor's reliability relative to the most reliable one. The most trusted advisor is left untouched; the others are progressively downweighted. There are no new parameters, no training, and no extra text in the prompt.
+The block structure is what makes reliability **contextual**. Advisor 3 does not get one global trust score; it gets its own linear function $$w_3^\top \psi_q(t)$$ of what the question looks like. Two advisors can therefore be ranked one way on arithmetic and the other way on reading comprehension, from the same features. The content part, by contrast, is shared across sources: if a certain kind of answer tends to be wrong, that lesson applies to every advisor who gives one. In the released code, each $$\psi$$ is a 256-dimensional PCA projection of $$M$$'s hidden states.
 
-We call this variant Advisors + memory. It helps: it is clearly more robust than giving the model the question and all advisor answers with no memory (Question + Peers). But it has a blind spot. Relative weights can tell the model whom to trust more. They cannot tell it that the whole pool has become worth ignoring.
+### The target: signed correctness
 
-## When should the model stop listening?
+Once an answer is verified we know $$y_{t,k} \in \{0,1\}$$. BaRe-Mem regresses on the signed version $$s_{t,k} = 2y_{t,k} - 1 \in \{-1,+1\}$$ with a Gaussian likelihood and a Gaussian prior:
 
-This is where the second use comes in. With T the highest advisor reliability on the current question, BaRe-Mem estimates the accuracy of consulting as
+$$
+s_{t,k} \mid x_{t,k}, w \;\sim\; \mathcal N\!\big(w^\top x_{t,k},\, 1\big), \qquad w \;\sim\; \mathcal N\!\big(0,\, \lambda^{-1} I\big)
+$$
 
-<p style="text-align:center; font-size:1.08em"><i>A</i>(<i>T</i>) = <i>T</i>·<i>ρ</i> + (1 − <i>T</i>)(<i>κ</i> − <i>δ</i>),</p>
+A Gaussian on a $$\pm 1$$ label looks odd at first: it is a regression on a classification target. What it buys is a posterior in closed form and updates that are exact. Part 3 turns the Gaussian back into a probability. The prior precision $$\lambda$$ says how much evidence it takes to move the memory; the experiments use $$\lambda = 100$$.
 
-and consults only if A(T) ≥ κ. Here ρ is how well the model does when trustworthy evidence is present, and δ is how much unreliable evidence costs it relative to answering alone. Both are learned online from verified questions, with the same Bayesian regression as the memory.
+## Part 2: The posterior, exactly and online
 
-The rule has a useful reading: when ρ > κ and δ > 0, the model consults once T exceeds a threshold δ / (ρ + δ − κ). That threshold rises with κ. The better the model already is on a question, the more trustworthy the advice must look before it is worth hearing.
+### The batch posterior
 
-## What happens when the advisors are wrong on purpose?
+Given every verified candidate so far, the posterior over $$w$$ is Gaussian with precision $$\Lambda$$ and mean $$m$$:
 
-To test this, we evaluate six central models with six advisors on nine benchmarks in two regimes. In the capability-supported regime (GSM8K, SQuAD, APPS), most central models are strong and good advice is easy to find. In the capability-challenging regime (PIQA, MMLU, OpenBookQA, SciQ, BBH, SuperGLUE), abilities vary much more across models and tasks. We then replace a growing share of advisor answers with misleading ones: fluent, on topic and well formed, but verified to be wrong.
+$$
+\Lambda = \lambda I + \sum x\,x^\top, \qquad b = \sum s\,x, \qquad m = \Lambda^{-1} b
+$$
 
-<figure class="note-fig narrow">
-  <a href="/images/notes/bare-mem/fig2_misleading_accuracy.png"><img src="/images/notes/bare-mem/fig2_misleading_accuracy.png" alt="Accuracy against the misleading information ratio for Qwen3-14B and Phi-4"></a>
-  <figcaption>Accuracy as the misleading information ratio grows, for Qwen3-14B (top) and Phi-4 (bottom). Left: capability-supported regime; right: capability-challenging regime.</figcaption>
-</figure>
+The appendix derives this by completing the square in the log posterior. Two readings are worth keeping in mind. $$\Lambda$$ is a **precision**: every verified candidate adds $$x\,x^\top$$, so certainty accumulates exactly in the directions where evidence was observed. And $$m$$ is a **ridge regression**: it is the unique minimiser of $$\sum (s - w^\top x)^2 + \lambda \lVert w \rVert^2$$, with the prior acting as the regulariser.
 
-In the capability-supported regime, consulting holds up well; only majority votes collapse. The interesting column is the capability-challenging one, at the two ends of the sweep:
+### One outcome at a time
 
-<div class="note-table" markdown="1">
+Recomputing $$\Lambda^{-1}$$ after every question would be wasteful. Adding one observation changes $$\Lambda$$ by a rank-one term, and the Sherman–Morrison identity inverts a rank-one change in closed form:
 
-| Capability-challenging | No consultation | Question + Peers (0% → 100%) | BaRe-Mem (0% → 100%) | Consults (0% → 100%) |
-| --- | ---: | ---: | ---: | ---: |
-| Qwen3-14B | 66.5 | 69.8 → 50.6 | 76.1 → 68.6 | 90% → 21% |
-| Phi-4 | 63.4 | 65.8 → 48.3 | 71.2 → 65.0 | 85% → 18% |
+$$
+\big(P + u\,u^\top\big)^{-1} \;=\; S \;-\; \frac{S\,u\,u^\top S}{1 + u^\top S\,u}, \qquad S = P^{-1}
+$$
+
+Setting $$u = x_{t,k}$$ and $$S = \Lambda^{-1}$$ gives the whole update in three lines:
+
+<div class="box" markdown="1">
+
+$$
+\begin{aligned}
+g &= \frac{\Lambda^{-1} x}{1 + x^\top \Lambda^{-1} x} \\
+m &\leftarrow m + g\,\big(s - x^\top m\big) \\
+\Lambda^{-1} &\leftarrow \Lambda^{-1} - g\,\big(\Lambda^{-1} x\big)^\top
+\end{aligned}
+$$
+
+Each line costs $$O(d^2)$$, and the result is identical, in exact arithmetic, to the batch posterior.
 
 </div>
 
-Question + Peers and two rounds of debate are below answering alone by the time half the advice is misleading. Majority votes collapse faster still. Advisors + memory lasts longer, but it too ends below the No consultation line. BaRe-Mem stays above that line at every ratio we tested, and the last column shows why: it consults on fewer and fewer questions. In the capability-supported regime, where advice stays useful, its consultation ratio barely moves (87% to 85% for Qwen3-14B).
+The vector $$g$$ is the **Kalman gain**, and it is the heart of the method. Everything the memory learns passes through it, so it deserves a closer look.
 
-This is a narrower claim than "BaRe-Mem detects misleading answers". It does not label individual answers. What it learns, from verified outcomes, is that consulting this pool on this kind of question has stopped paying off.
+### The Kalman gain, up close
 
-## Does the memory know its own model?
+The gain is easiest to understand through what it does to the candidate's own score. Write $$\mu = x^\top m$$ for the current estimate and $$v = x^\top \Lambda^{-1} x$$ for its uncertainty, and multiply the mean update by $$x^\top$$:
 
-The decision leans on κ, so it is worth checking that κ means something.
+$$
+\mu' \;=\; \mu + \underbrace{x^\top g}_{K}\,\big(s - \mu\big), \qquad
+K \;=\; x^\top g \;=\; \frac{v}{1 + v}.
+$$
 
-<figure class="note-fig">
-  <a href="/images/notes/bare-mem/fig3_kappa.png"><img src="/images/notes/bare-mem/fig3_kappa.png" alt="Estimated autonomous ability against empirical accuracy"></a>
-  <figcaption>Left: mean κ and the model's accuracy without consultation along the question stream. Right: accuracy without consultation for groups of questions with similar κ; the dashed diagonal is perfect calibration.</figcaption>
-</figure>
+Rearranged, this is a **weighted average** of what the memory believed and what it has just seen:
 
-Along the stream, κ moves with the model's actual accuracy. Grouping questions by κ, accuracy rises monotonically with it. κ is not a calibrated probability, as the curve is steeper than the diagonal, but higher κ reliably means a question the model is more likely to get right by itself.
+$$
+\mu' \;=\; (1 - K)\,\mu \;+\; K\,s .
+$$
 
-We also compared the predicted gain of consulting, A(T) − κ, with the real gain after verification. The real gain rises with the predicted one at every misleading ratio, and the curves cross zero close to where the prediction does. The boundary the memory draws between "consult" and "answer alone" is roughly where it should be.
+The gain $$K \in [0, 1)$$ is the weight on the new evidence, and it is not a tuning knob. It is the uncertainty of the belief divided by the total uncertainty, belief plus the unit noise of one outcome:
 
-## How much verification does it need?
+$$
+K \;=\; \frac{v}{v + 1} \;=\; \frac{\text{uncertainty of the belief}}{\text{uncertainty of the belief} + \text{noise of one outcome}} .
+$$
 
-Verified outcomes are not free. We varied the share of questions whose outcome is written to memory, on the capability-challenging stream.
+When the memory knows nothing about a candidate ($$v$$ large), $$K \to 1$$ and the new outcome is taken almost at face value. When it already knows a lot ($$v \to 0$$), $$K \to 0$$ and one more outcome barely moves it. The update also shrinks the uncertainty, by exactly the same factor:
 
-<figure class="note-fig">
-  <a href="/images/notes/bare-mem/fig5_sparse_feedback.png"><img src="/images/notes/bare-mem/fig5_sparse_feedback.png" alt="BaRe-Mem accuracy against the share of questions with verified feedback"></a>
-  <figcaption>BaRe-Mem accuracy as the share of verified questions grows from 0% to 100%. Insets magnify the region below 1%.</figcaption>
-</figure>
+$$
+v' \;=\; (1 - K)\,v \;=\; \frac{v}{1 + v}, \qquad \frac{1}{v'} \;=\; \frac{1}{v} + 1 .
+$$
 
-With no feedback at all, Qwen3-14B with BaRe-Mem answers 67.3% correctly. With 1% of the questions verified, about 170 of them, it reaches 73.3%; with 10%, 75.7%; with everything, 76.1%. Phi-4 follows the same shape, from 65.0% to 68.1% at 1% and 70.6% at 10%. Most of the gain arrives long before full verification.
+Every verified outcome adds exactly one unit of precision, so the next gain is always smaller than the last. Press the buttons below and watch both happen: the update lands $$K$$ of the way from the belief to the outcome, and $$K$$ shrinks with every observation.
 
-## From answers to workers
+<div class="widget" id="w-gain">
+  <p class="w-title">Figure 2 · The Kalman gain as a mixing weight</p>
+  <p class="w-sub">Left: the belief about a candidate's score (black), the outcome just observed (green or red, with unit noise) and the dashed belief before the update. Right: the expected squared error of that update for every step size k; the Kalman gain sits at the minimum, below any fixed step.</p>
+</div>
 
-The same memory can serve a different decision. In an agent team on MuSiQue (2,417 tasks, 6,404 sub-tasks), a lead agent splits each task into sub-tasks, gives each one to a worker, checks the report, and tries another worker if the report is rejected. Here BaRe-Mem does not reweight answers. It ranks the workers before any of them has replied.
+### Why this gain, and not another step
 
-<figure class="note-fig">
-  <a href="/images/notes/bare-mem/agent_team_loop.png"><img src="/images/notes/bare-mem/agent_team_loop.png" alt="Agent team pipeline with BaRe-Mem"></a>
-  <figcaption>The lead reads the memory to rank candidate workers; every verified report is written back.</figcaption>
-</figure>
+The right panel is the appendix's derivation drawn out. For any update $$m + k\,(s - x^\top m)$$, the expected squared error after the update is
 
-<figure class="note-fig">
-  <a href="/images/notes/bare-mem/fig6_agent_team.png"><img src="/images/notes/bare-mem/fig6_agent_team.png" alt="Agent-team task completion on MuSiQue"></a>
-  <figcaption>Tasks solved with Qwen3-14B and Phi-4 as the lead, without a check, with the lead's own check, and with the dataset's exact check.</figcaption>
-</figure>
+$$
+R(k) = \operatorname{tr} S - 2\,k^\top S x + (1 + v)\,k^\top k, \qquad v = x^\top S x .
+$$
 
-With Qwen3-14B leading, BaRe-Mem solves 38.9%, 41.4% and 54.3% of tasks under the three verification settings, against 35.5%, 39.5% and 50.4% when routing by historical success counts. With Phi-4 leading, the numbers are 40.0%, 42.6% and 54.2% against 31.8%, 37.0% and 50.5%. When the lead may keep trying workers until one succeeds, every strategy approaches the same ceiling, but BaRe-Mem solves more tasks with fewer calls: it finds a capable worker earlier.
+It is a quadratic in $$k$$, and setting its gradient to zero gives exactly $$k = S x / (1 + v) = g$$. In one dimension $$R(k) = v - 2kv + (1 + v)\,k^2$$ is a parabola whose minimum sits at $$k = K$$, where the error equals the new uncertainty $$v'$$. Any fixed step size is worse, except by luck at one particular moment.
 
-## What I would check before trusting an advisor pool
+### The gain is a vector
 
-If a model is consulting other agents, I would first ask whether the pool is worth consulting on this task at all, not only which advisor ranks highest. A ranking always has a winner, even when every option is bad.
+In more than one dimension, $$g = S x / (1 + v)$$ points along $$S x$$, not along $$x$$. Through the posterior covariance $$S$$, a single outcome moves every weight that the memory believes is correlated with $$x$$. That is how evidence about one candidate can reach another through what they share: the content belief $$\psi_c$$ and the bias. With the shared bias switched on in Figure 3, you can watch it happen.
 
-Second, I would keep the central model's own answer in the record. Without an estimate of what the model can do alone, there is nothing to compare the advice against.
+### Watching it work
 
-Third, I would verify a small sample rather than nothing. In our runs, verifying 1% of the questions, about 170, already recovered a large part of the gain.
+The paper's Figure 1 is the simplest case. Give each candidate a single feature of its own, $$x = e_k$$. Then every quantity is a scalar, and after $$n$$ verified outcomes $$s_1, \dots, s_n$$ of that candidate:
 
-There are limits. BaRe-Mem needs verified outcomes, even if sparse. It reads the central model's hidden states and edits its attention, so it needs an open-weight central model. And our misleading advisors were constructed: wrong, but in a controlled way. Advice in the wild can fail in less tidy ways. What the experiments do show is that "whom to trust" and "whether to listen" are separate questions, and that one memory, updated from verified outcomes, can answer both.
+$$
+\mu_n = \frac{\sum_{i \le n} s_i}{\lambda + n}, \qquad v_n = \frac{1}{\lambda + n} .
+$$
+
+With $$\lambda = 16/9$$, the first three gains are $$0.36$$, $$0.26$$ and $$0.21$$, exactly the numbers annotated in the paper's figure. Press "Paper's Figure 1" to replay it, or verify answers yourself.
+
+<div class="widget" id="w-memory">
+  <p class="w-title">Figure 3 · The memory, one verified answer at a time</p>
+  <p class="w-sub">Each curve is the predictive distribution of a candidate's signed correctness; the shaded area right of zero is its reliability p. The dashed curve is the state before the last update.</p>
+</div>
+
+Two things to try. First, verify only candidate 1: candidate 2 does not move, because no evidence touched its direction. Then switch on the shared bias feature and do it again. Now both candidates contain a common component, the covariance couples them, and evidence about one leaks into the other.
+
+### A step size that adapts
+
+In the scalar case the gain of the $$n$$-th update is
+
+$$
+K_n = \frac{v_{n-1}}{1 + v_{n-1}} = \frac{1}{\lambda + n} ,
+$$
+
+so the memory is a **running average** of $$\pm 1$$ outcomes that starts with $$\lambda$$ phantom observations of zero. That is what a good step size should do: take large steps while little is known and ever smaller ones as evidence piles up. A fixed step cannot do both. Small, and it is slow to learn; large, and it never settles, because each new outcome keeps pushing it around.
+
+<div class="widget" id="w-step">
+  <p class="w-title">Figure 4 · An adaptive step against fixed steps</p>
+  <p class="w-sub">Verified outcomes of one candidate stream in (right with probability p*). Top: the estimate under the Kalman gain and under two fixed step sizes, against the target 2p* − 1. Bottom: the step size each rule uses.</p>
+</div>
+
+The figure is a toy, but the pattern is general. Averaged over 2,000 random streams with $$p^* = 0.7$$, the error over the first 300 outcomes is $$0.075$$ with the Kalman gain, against $$0.110$$ with the fixed step $$0.02$$ and $$0.318$$ with $$0.3$$. A single stream can come out either way, so press "New random stream" a few times.
+
+### Two properties for free
+
+Because $$\Lambda$$ and $$b$$ are plain sums, the posterior does not depend on the order in which verified outcomes arrive: any permutation gives the same $$\Lambda$$, the same $$b$$ and therefore the same $$m$$. And because $$p_{t,k}$$ is always read before the outcome of question $$t$$ is written, every estimate uses only earlier evidence; there is no leakage from the answer being scored.
+
+## Part 3: From a score to a probability
+
+The posterior over $$w$$ is Gaussian, so the score of a candidate is Gaussian too:
+
+$$
+w^\top x \mid \mathcal D \;\sim\; \mathcal N(\mu, v), \qquad \mu = x^\top m, \qquad v = x^\top \Lambda^{-1} x
+$$
+
+Here $$\mu$$ is the expected signed correctness and $$v$$ is the memory's uncertainty about it. The observation adds its own unit noise, $$s = w^\top x + \varepsilon$$, so the prediction for the signed correctness is $$s \sim \mathcal N(\mu,\, 1 + v)$$. BaRe-Mem defines reliability as the probability that this prediction is positive:
+
+$$
+p_{t,k} \;=\; \Pr\big(s > 0\big) \;=\; \Phi\!\left( \frac{\mu_{t,k}}{\sqrt{1 + v_{t,k}}} \right)
+$$
+
+That is the shaded area in Figure 3. Two consequences follow directly. Before any evidence, $$m = 0$$, so every candidate starts at $$p = \Phi(0) = \tfrac12$$. And for a fixed $$\mu$$, a larger $$v$$ shrinks $$\mu/\sqrt{1+v}$$ toward zero, which pulls $$p$$ toward $$\tfrac12$$: an advisor the memory knows little about, or a question unlike any seen so far, is neither trusted nor distrusted strongly.
+
+## Part 4: Reliability inside attention
+
+The first use of $$p_{t,k}$$ is to change how much each advisor's answer influences the central model. For a context token $$j$$ that belongs to the response of advisor $$c(j)$$, BaRe-Mem adds a bias to the attention logit in every attention head:
+
+$$
+\alpha_{qj} = \operatorname{softmax}_j\!\left( \frac{\langle Q_q, K_j\rangle}{\sqrt d} + \beta_{t,c(j)} \right), \qquad
+\beta_{t,k} = \gamma \log \frac{p_{t,k}}{\max_{k'} p_{t,k'}}
+$$
+
+with $$\beta = 0$$ for every token outside an advisor response. Write $$c_k = e^{\beta_{t,k}} = \big(p_{t,k} / \max_{k'} p_{t,k'}\big)^{\gamma}$$. Since $$\exp$$ of a sum is a product, the softmax becomes
+
+$$
+\alpha_{qj} = \frac{c_{c(j)}\; e^{\ell_{qj}}}{\sum_i c_{c(i)}\; e^{\ell_{qi}}}, \qquad \ell_{qj} = \frac{\langle Q_q, K_j\rangle}{\sqrt d},
+$$
+
+with $$c = 1$$ for tokens outside advisor responses. So the bias is an exact **multiplicative reweighting**: the total attention mass $$M_k$$ on advisor $$k$$'s answer becomes $$c_k M_k / Z$$, with $$Z$$ renormalising over the whole context.
+
+A few properties fall straight out of the formula. Every $$c_k \in (0, 1]$$, and the most reliable advisor has $$c = 1$$: its weight is never changed. Its *share* of the attention can still grow, because the other advisors shrink before the mass is renormalised. The weights depend only on the ratios $$p_k / \max p$$, so multiplying every reliability by the same constant changes nothing. $$\gamma = 0$$ switches the mechanism off, and as $$\gamma$$ grows, attention concentrates on the top advisor. There are no trainable parameters; in the experiments, $$\gamma = 3$$, applied in the full-attention layers.
+
+## Part 5: Deciding whether to consult
+
+Relative weights can say whom to trust more. They cannot say that the whole pool of advisors is worth ignoring. For that, BaRe-Mem compares two abilities on the current question.
+
+### Two numbers from one memory
+
+Both come out of the memory we already have. The own-answer candidate gives the central model's **autonomous ability**, and the best advisor gives the **trust** in the available evidence:
+
+$$
+\kappa_t = p_{t,0}, \qquad T_t = \max_{k \ge 1} p_{t,k}
+$$
+
+### A model of consultation
+
+When trust is high ($$T \to 1$$), consultation succeeds with some probability $$\rho$$: how well $$M$$ uses trustworthy evidence. When trust is low ($$T \to 0$$), unreliable evidence can pull $$M$$ away from its own judgment, costing $$\delta$$ relative to answering alone. BaRe-Mem interpolates between the two:
+
+$$
+A(T) \;=\; \underbrace{T\,\rho}_{\text{reliable evidence}} \;+\; \underbrace{(1 - T)\,(\kappa - \delta)}_{\text{unreliable evidence}}
+$$
+
+### Learning ρ and δ is another Bayesian regression
+
+$$\rho$$ and $$\delta$$ are unknown, but after each question we see $$y_t \in \{0, 1\}$$: whether consulting gave the right answer. Model it as $$y_t = A(T_t) + \varepsilon_t$$ and move the known term to the left:
+
+$$
+z_t \equiv y_t - (1 - T_t)\,\kappa_t = u_t^\top \theta + \varepsilon_t, \qquad
+u_t = \begin{bmatrix} T_t \\ T_t - 1 \end{bmatrix}, \qquad
+\theta = \begin{bmatrix} \rho \\ \delta \end{bmatrix}
+$$
+
+That is the same Bayesian linear regression as in Part 2, now in two dimensions. With prior $$\theta \sim \mathcal N(\theta_0, I)$$ (the code uses $$\theta_0 = (0.5, 0)$$ and keeps one such regression per task type):
+
+$$
+P_c = I + \sum_{s<t} u_s u_s^\top, \qquad q_c = \theta_0 + \sum_{s<t} u_s z_s, \qquad \begin{bmatrix} \hat\rho \\ \hat\delta \end{bmatrix} = P_c^{-1} q_c
+$$
+
+The regressor $$u_t$$ tells you which parameter a question teaches. A question with $$T = 1$$ has $$u = [1, 0]$$ and $$z = y$$: it informs only $$\rho$$. A question with $$T = 0$$ has $$u = [0, -1]$$ and $$z = y - \kappa$$: it informs only $$\delta$$, the shortfall of consulting relative to answering alone. Everything in between informs both.
+
+<div class="widget" id="w-learn">
+  <p class="w-title">Figure 5 · Learning ρ and δ from verified questions</p>
+  <p class="w-sub">Questions arrive with random trust T and autonomous ability κ; consulting succeeds with probability A(T). The estimates start at the prior (0.5, 0) and converge to the true values. The figure opens after 150 questions; press Reset to watch from the start.</p>
+</div>
+
+### The decision and its break-even trust
+
+The central model consults when the estimated consultation ability beats answering alone, $$A(T_t) \ge \kappa_t$$. The difference is linear in $$T$$:
+
+$$
+G(T) = A(T) - \kappa = (\hat\rho + \hat\delta - \kappa)\,T - \hat\delta
+$$
+
+In the main regime, $$\hat\delta > 0$$ and $$\hat\rho > \kappa$$, $$G$$ rises from $$-\hat\delta$$ to $$\hat\rho - \kappa$$ and crosses zero once, at the **break-even trust**
+
+$$
+T^* = \frac{\hat\delta}{\hat\rho + \hat\delta - \kappa}.
+$$
+
+Writing $$D = \hat\rho + \hat\delta - \kappa$$, its derivatives are
+
+$$
+\frac{\partial T^*}{\partial \kappa} = \frac{\hat\delta}{D^2} > 0, \quad
+\frac{\partial T^*}{\partial \hat\delta} = \frac{\hat\rho - \kappa}{D^2} > 0, \quad
+\frac{\partial T^*}{\partial \hat\rho} = -\frac{\hat\delta}{D^2} < 0.
+$$
+
+Read the signs: the better the model already is, or the more bad advice costs, the more trustworthy the advice must look before it is worth hearing. Since $$G$$ is linear, its endpoints $$G(0) = -\hat\delta$$ and $$G(1) = \hat\rho - \kappa$$ decide everything, which gives four regimes: consult iff $$T \ge T^*$$ (the case above), never consult ($$\hat\delta \ge 0$$, $$\hat\rho < \kappa$$), always consult ($$\hat\delta \le 0$$, $$\hat\rho \ge \kappa$$), and consult iff $$T \le T^*$$ ($$\hat\delta < 0$$, $$\hat\rho < \kappa$$).
+
+### What the decision actually needs
+
+The appendix ends with a short argument that changes how to think about all these estimates. Let $$a_t$$ and $$o_t$$ be the true probabilities that consulting and answering alone are right, and let $$W$$ be the questions where the rule picks the worse option. Then
+
+$$
+\mathrm{Acc}_{\mathrm{select}} \;\ge\; \max\big(\mathrm{Acc}_{\mathrm{consult}},\, \mathrm{Acc}_{\mathrm{alone}}\big) \;-\; \frac{1}{N} \sum_{t \in W} \lvert a_t - o_t \rvert .
+$$
+
+The decision only has to get the **sign** of $$A(T_t) - \kappa_t$$ right, not the values. When it gets the sign wrong, the cost is exactly the true gap $$\lvert a_t - o_t \rvert$$, so mistakes near a tie are almost free and only confident mistakes are expensive. What the estimates need is the right ordering between consulting and answering alone, not perfectly calibrated values.
+
+## One regression, three uses
+
+Put together, the whole method is a short chain of exact steps:
+
+- a Bayesian linear regression on signed correctness, over features that give every source its own weights, updated in closed form with the Kalman gain;
+- a probit read-out, $$p = \Phi\big(\mu / \sqrt{1 + v}\big)$$, that starts at one half and stays near it when the memory is unsure;
+- a log-ratio attention bias, which is an exact multiplicative reweighting of each advisor's attention mass;
+- a second, two-dimensional regression for $$\rho$$ and $$\delta$$, and a linear decision with a break-even trust $$T^*$$.
+
+The same posterior serves one more decision in the paper: in an agent team, the lead ranks workers by $$p$$ computed from the sub-task alone, before any of them has answered. The pipeline and the experiments are in the [paper](https://arxiv.org/abs/2609.35551); the code is on [GitHub](https://github.com/declare-lab/BaRe-Mem).
 
 ## Citation
 
