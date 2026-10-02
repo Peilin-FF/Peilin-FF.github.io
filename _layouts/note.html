@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | strip_html | escape_once }} · {{ site.title }}</title>
+<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | escape_once }}">
+<meta name="author" content="{{ site.title }}">
+<link rel="canonical" href="https://peilin-ff.github.io{{ page.url }}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | strip_html | escape_once }}">
+<meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | escape_once }}">
+<meta property="og:url" content="https://peilin-ff.github.io{{ page.url }}">
+{% if page.image %}<meta property="og:image" content="https://peilin-ff.github.io{{ page.image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://peilin-ff.github.io{{ page.image }}">{% endif %}
+<meta name="twitter:title" content="{{ page.title | strip_html | escape_once }}">
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | escape_once }}">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fdfcfa;
+    --ink: #1f1e1c;
+    --body: #2c2b28;
+    --muted: #6b6a64;
+    --faint: #9a9993;
+    --line: #e8e6e0;
+    --accent: #b9483d;
+    --link: #2a62b0;
+    --card: #ffffff;
+    --code-bg: #f3f2ee;
+    --table-head: #f6f5f1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141413; --ink: #efeee9; --body: #dddcd6; --muted: #a9a8a2; --faint: #7d7c76; --line: #2e2d2a;
+      --accent: #e88175; --link: #8cb6ee; --card: #ffffff; --code-bg: #1f1e1c; --table-head: #1c1b19;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141413; --ink: #efeee9; --body: #dddcd6; --muted: #a9a8a2; --faint: #7d7c76; --line: #2e2d2a;
+    --accent: #e88175; --link: #8cb6ee; --card: #ffffff; --code-bg: #1f1e1c; --table-head: #1c1b19;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--body); font: 400 18.5px/1.72 "Source Serif 4", Georgia, serif; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--accent); z-index: 20; }
+  .topbar {
+    position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between;
+    padding: 12px max(16px, calc((100vw - 1040px) / 2)); background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px);
+    border-bottom: 1px solid var(--line); font: 500 15px/1.4 Inter, system-ui, sans-serif;
+  }
+  .topbar .home { color: var(--ink); font-weight: 600; }
+  .topbar nav a { color: var(--muted); margin-left: 22px; }
+  .topbar nav a:hover { color: var(--ink); text-decoration: none; }
+
+  .note { max-width: 700px; margin: 0 auto; padding: 56px 16px 24px; }
+  .note-kicker { font: 600 12.5px/1 Inter, system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 18px; }
+  .note-title { font: 700 clamp(31px, 5vw, 44px)/1.12 "Source Serif 4", Georgia, serif; color: var(--ink); letter-spacing: -.01em; margin: 0 0 18px; }
+  .note-dek { font-size: 21px; line-height: 1.5; color: var(--muted); margin: 0 0 22px; }
+  .note-meta { font: 400 14.5px/1.5 Inter, system-ui, sans-serif; color: var(--muted); margin: 0 0 14px; }
+  .note-meta b { color: var(--ink); font-weight: 600; }
+  .note-links { margin: 0 0 8px; }
+  .note-links a {
+    display: inline-block; margin: 0 6px 8px 0; padding: 5px 14px; border-radius: 999px; border: 1px solid var(--line);
+    color: var(--ink); font: 500 14px/1.4 Inter, system-ui, sans-serif;
+  }
+  .note-links a:hover { border-color: var(--faint); text-decoration: none; }
+
+  .note h2 { font: 700 27px/1.25 "Source Serif 4", Georgia, serif; color: var(--ink); margin: 2.1em 0 .6em; }
+  .note p { margin: 0 0 1.1em; }
+  .note ul, .note ol { padding-left: 1.3em; }
+  .note b, .note strong { color: var(--ink); }
+
+  .note-fig { width: min(940px, calc(100vw - 32px)); margin: 2em 0 2.2em; position: relative; left: 50%; transform: translateX(-50%); }
+  .note-fig.narrow { width: min(700px, calc(100vw - 32px)); }
+  .note-fig a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+  .note-fig img { display: block; width: 100%; height: auto; }
+  .note-fig figcaption { max-width: 700px; margin: 12px auto 0; font: 400 14.5px/1.6 Inter, system-ui, sans-serif; color: var(--muted); }
+
+  .note-table { overflow-x: auto; margin: 1.4em 0 1.6em; }
+  .note-table table { border-collapse: collapse; width: 100%; font: 400 15px/1.5 Inter, system-ui, sans-serif; }
+  .note-table th, .note-table td { padding: 9px 12px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+  .note-table th:first-child, .note-table td:first-child { text-align: left; }
+  .note-table th { background: var(--table-head); color: var(--ink); font-weight: 600; }
+
+  .note pre {
+    margin: 0 0 1.2em; padding: 16px 18px; overflow-x: auto; border-radius: 10px; background: var(--code-bg);
+    border: 1px solid var(--line); font: 13.5px/1.6 ui-monospace, "SF Mono", Menlo, Consolas, monospace; color: var(--ink);
+    white-space: pre-wrap; overflow-wrap: anywhere;
+  }
+  .note code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .86em; }
+  .note pre code { font-size: inherit; }
+  .note .highlight span { color: inherit; font-style: normal; font-weight: inherit; }
+  .copy-wrap { position: relative; }
+  .copy-wrap pre { padding-top: 46px; }
+  .copy-btn {
+    position: absolute; top: 9px; right: 9px; padding: 4px 13px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink); font: 500 13px/1.4 Inter, system-ui, sans-serif;
+  }
+  .copy-btn:hover { border-color: var(--faint); }
+
+  .note-end { max-width: 700px; margin: 40px auto 0; padding: 22px 16px 64px; border-top: 1px solid var(--line); font: 400 15px/1.6 Inter, system-ui, sans-serif; color: var(--muted); }
+  .note-end a { margin-right: 18px; }
+
+  @media (max-width: 640px) {
+    body { font-size: 17.5px; }
+    .note { padding-top: 36px; }
+    .note-dek { font-size: 19px; }
+    .note h2 { font-size: 24px; }
+    .topbar nav a { margin-left: 14px; }
+    .topbar nav .wide { display: none; }
+    .note-fig a { padding: 8px; border-radius: 9px; }
+  }
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="topbar">
+  <a class="home" href="/">{{ site.title }}</a>
+  <nav><a class="wide" href="/#-publications">Publications</a><a href="/#-notes">Notes</a></nav>
+</header>
+
+<main class="note">
+{{ content }}
+</main>
+
+<footer class="note-end">
+  <a href="/#-notes">← All notes</a><a href="/">Homepage</a>
+</footer>
+
+<script>
+  (function () {
+    var bar = document.getElementById("progress");
+    function update() {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? Math.min(100, 100 * window.scrollY / h) : 0) + "%";
+    }
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+
+    var blocks = document.querySelectorAll(".note pre");
+    for (var i = 0; i < blocks.length; i++) {
+      (function (pre) {
+        var wrap = document.createElement("div");
+        wrap.className = "copy-wrap";
+        pre.parentNode.insertBefore(wrap, pre);
+        wrap.appendChild(pre);
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "copy-btn";
+        btn.textContent = "Copy";
+        wrap.appendChild(btn);
+        function done(ok) {
+          btn.textContent = ok ? "Copied" : "Selected: press Ctrl/Cmd+C";
+          setTimeout(function () { btn.textContent = "Copy"; }, 1800);
+        }
+        function selectAndCopy() {
+          var range = document.createRange();
+          range.selectNodeContents(pre);
+          var sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+          var ok = false;
+          try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+          done(ok);
+        }
+        btn.addEventListener("click", function () {
+          var text = pre.innerText.replace(/\s+$/, "") + "\n";
+          if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(text).then(function () { done(true); }, selectAndCopy);
+          } else {
+            selectAndCopy();
+          }
+        });
+      })(blocks[i]);
+    }
+  })();
+</script>
+</body>
+</html>

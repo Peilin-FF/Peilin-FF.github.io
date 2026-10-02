@@ -1,22 +1,11 @@
 ---
+layout: note
 permalink: /notes/bare-mem/
 title: "BaRe-Mem: Bayesian Reliability Memory for Robust and Adaptive Agent Consultation"
 excerpt: "When advisors can be wrong, a central model needs to know whom to trust and whether to consult at all."
-author_profile: true
+image: /images/notes/bare-mem/fig1_memory_update.png
+author_profile: false
 ---
-
-<style>
-  .note-kicker { font-size: .78em; letter-spacing: .08em; text-transform: uppercase; color: #8a8984; margin: 0 0 .4em; }
-  .note-title { font-size: 1.9em; line-height: 1.2; margin: 0 0 .45em; border-bottom: 0 !important; padding-bottom: 0 !important; }
-  .note-dek { font-size: 1.12em; color: #4a4a46; margin: 0 0 .9em; }
-  .note-meta { font-size: .9em; color: #6a6a65; margin: 0 0 1em; }
-  .note-links a { display: inline-block; margin: 0 .35em .4em 0; padding: .2em .8em; border: 1px solid #d9d7d1; border-radius: 999px; font-size: .88em; text-decoration: none; }
-  .note-fig { margin: 1.4em 0 1.6em; }
-  .note-fig img { display: block; width: 100%; height: auto; border: 1px solid #e7e5e0; border-radius: 8px; }
-  .note-fig.narrow img { max-width: 80%; margin: 0 auto; }
-  .note-fig figcaption { font-size: .86em; color: #6a6a65; margin-top: .5em; line-height: 1.5; }
-  .note-table { font-size: .9em; }
-</style>
 
 <p class="note-kicker">Note</p>
 
