@@ -153,7 +153,8 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 - *2022.10*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(I)Test.pdf) & \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(I)Answer.pdf)
 - *2023.04*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(II)Test.pdf) & \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(II)Answer.pdf)
 
-
+# 📒 Inspiration Notes
+- *2026.10*: &nbsp;[Mathematical Intuition Behind BaRe-Mem](/notes/bare-mem/). The mathematics behind our Bayesian reliability memory.
 
 # 💻 Internships
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/zhipu.png' alt="ZHIPU" width="30%" style="margin-bottom: 0;"></div></div>
@@ -169,18 +170,16 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/cast.png' alt="CAST" width="40%" style="margin-bottom: 0;"></div></div>
-<div class='paper-box-text' markdown="1" style="margin-top: -20px; margin-left: -15em;">
+<!-- <div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/cast.png' alt="CAST" width="40%" style="margin-bottom: 0;"></div></div>
+<div class='paper-box-text' markdown="1" style="margin-top: -20px; margin-left: -15em;"> -->
 
-- *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), Beijing, China.
+<!-- - *2024.07 - 2024.09*, [China Academy of Space Technology](https://www.cast.cn/), Beijing, China.
 </div>
-</div>
+</div> -->
 
-# 📒 Notes
-- *2026.10*: &nbsp;[A Visual Guide to BaRe-Mem](/notes/bare-mem/). The mathematics behind a Bayesian reliability memory, built up one equation at a time, with interactive figures.
 
 # ✏️ Community Service
-- Conference Reviewer: AAAI, ICLR workshop, Neurips
+- Conference Reviewer: AAAI, ICLR, Neurips
 <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=zPzVmHbYMKiKoDeQ37f2Y60SWu9aiDwmXLD4moLgquc&cl=ffffff&w=200"></script>
 
 

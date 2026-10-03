@@ -1,8 +1,8 @@
 ---
 layout: note
 permalink: /notes/bare-mem/
-title: "A Visual Guide to BaRe-Mem"
-excerpt: "The mathematics behind a Bayesian reliability memory, built up one equation at a time, with figures you can play with."
+title: "Mathematical Intuition Behind BaRe-Mem"
+excerpt: "The mathematics behind our Bayesian reliability memory"
 image: /images/notes/bare-mem/fig1_memory_update.png
 math: true
 widgets: /assets/js/notes/bare-mem.js
@@ -19,7 +19,7 @@ author_profile: false
 
 <p class="note-links"><a href="https://arxiv.org/abs/2609.35551">Paper</a><a href="https://github.com/declare-lab/BaRe-Mem">GitHub</a><a href="https://huggingface.co/spaces/Sssunset/BaRe-Mem">Project page</a><a href="https://huggingface.co/datasets/Sssunset/BaRe-Mem-Data">Dataset</a></p>
 
-The paper describes the pipeline and the experiments. This note is about something a paper can only state in passing: why the mathematics works. Everything BaRe-Mem does (trusting one advisor over another, steering attention, deciding whether to consult at all) comes out of a single Bayesian linear regression and a few lines of algebra. I will build it up one piece at a time. Most figures are interactive: click, drag, and watch the equations move.
+Our [BaRe-Mem paper](https://arxiv.org/abs/2609.35551) and [Project Page](https://huggingface.co/spaces/Sssunset/BaRe-Mem) describe the pipeline and the experiment results. This note is about something a paper can only state in passing: why the mathematics works. Everything BaRe-Mem does (trusting one advisor over another, steering attention, deciding whether to consult at all) comes out of a single Bayesian linear regression and a few lines of algebra. I will build it up one piece at a time. 
 
 Here is what we want. For every candidate answer $$k$$ to a question $$q_t$$, a number $$p_{t,k}$$: the probability that this answer is right. That number should
 
@@ -65,7 +65,7 @@ $$
 s_{t,k} \mid x_{t,k}, w \;\sim\; \mathcal N\!\big(w^\top x_{t,k},\, 1\big), \qquad w \;\sim\; \mathcal N\!\big(0,\, \lambda^{-1} I\big)
 $$
 
-A Gaussian on a $$\pm 1$$ label looks odd at first: it is a regression on a classification target. What it buys is a posterior in closed form and updates that are exact. Part 3 turns the Gaussian back into a probability. The prior precision $$\lambda$$ says how much evidence it takes to move the memory; the experiments use $$\lambda = 100$$.
+A Gaussian on a $$\pm 1$$ label looks puzzling at first: it is a regression on a classification target. What it buys is a posterior in closed form and updates that are exact. Part 3 turns the Gaussian back into a probability. The prior precision $$\lambda$$ says how much evidence it takes to move the memory; the experiments use $$\lambda = 100$$.
 
 ## Part 2: The posterior, exactly and online
 
@@ -77,11 +77,11 @@ $$
 \Lambda = \lambda I + \sum x\,x^\top, \qquad b = \sum s\,x, \qquad m = \Lambda^{-1} b
 $$
 
-The appendix derives this by completing the square in the log posterior. Two readings are worth keeping in mind. $$\Lambda$$ is a **precision**: every verified candidate adds $$x\,x^\top$$, so certainty accumulates exactly in the directions where evidence was observed. And $$m$$ is a **ridge regression**: it is the unique minimiser of $$\sum (s - w^\top x)^2 + \lambda \lVert w \rVert^2$$, with the prior acting as the regulariser.
+The appendix[add which part here(better to add a link which can lead the reader to the paper in this section)] derives this by completing the square in the log posterior. Two readings are worth keeping in mind. $$\Lambda$$ is a **precision**: every verified candidate adds $$x\,x^\top$$, so certainty accumulates exactly in the directions where evidence was observed. And $$m$$ is a **ridge regression**: it is the unique minimiser of $$\sum (s - w^\top x)^2 + \lambda \lVert w \rVert^2$$, with the prior acting as the regulariser.
 
-### One outcome at a time
+### Process one outcome at a time
 
-Recomputing $$\Lambda^{-1}$$ after every question would be wasteful. Adding one observation changes $$\Lambda$$ by a rank-one term, and the Sherman–Morrison identity inverts a rank-one change in closed form:
+Recomputing $$\Lambda^{-1}$$ after every question would be wasteful. Adding one observation changes $$\Lambda$$ by a rank-one term, and the Sherman–Morrison identity[add which part here(better to add a link which can lead the reader to the paper in this section)] inverts a rank-one change in closed form:
 
 $$
 \big(P + u\,u^\top\big)^{-1} \;=\; S \;-\; \frac{S\,u\,u^\top S}{1 + u^\top S\,u}, \qquad S = P^{-1}
@@ -99,13 +99,11 @@ m &\leftarrow m + g\,\big(s - x^\top m\big) \\
 \end{aligned}
 $$
 
-Each line costs $$O(d^2)$$, and the result is identical, in exact arithmetic, to the batch posterior.
-
 </div>
 
-The vector $$g$$ is the **Kalman gain**, and it is the heart of the method. Everything the memory learns passes through it, so it deserves a closer look.
+The vector $$g$$ is the **Kalman gain**[add which part here(better to add a link which can lead the reader to the paper in this section)], and it is the heart of the method. Everything the memory learns passes through it, so it deserves a closer look.
 
-### The Kalman gain, up close
+### Comprehend the Kalman gain
 
 The gain is easiest to understand through what it does to the candidate's own score. Write $$\mu = x^\top m$$ for the current estimate and $$v = x^\top \Lambda^{-1} x$$ for its uncertainty, and multiply the mean update by $$x^\top$$:
 
@@ -189,7 +187,7 @@ The figure is a toy, but the pattern is general. Averaged over 2,000 random stre
 
 ### Two properties for free
 
-Because $$\Lambda$$ and $$b$$ are plain sums, the posterior does not depend on the order in which verified outcomes arrive: any permutation gives the same $$\Lambda$$, the same $$b$$ and therefore the same $$m$$. And because $$p_{t,k}$$ is always read before the outcome of question $$t$$ is written, every estimate uses only earlier evidence; there is no leakage from the answer being scored.
+Because $$\Lambda$$ and $$b$$ are plain sums, the posterior does not depend on the order in which verified outcomes arrive: any permutation gives the same $$\Lambda$$, the same $$b$$ and therefore the same $$m$$[add the derivation in paper in which part here(better to add a link which can lead the reader to the paper in this section)]. And because $$p_{t,k}$$ is always read before the outcome of question $$t$$ is written, every estimate uses only earlier evidence; there is no leakage from the answer being scored.
 
 ## Part 3: From a score to a probability
 
