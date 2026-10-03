@@ -11,9 +11,9 @@ author_profile: false
 
 <p class="note-kicker">Note · BaRe-Mem</p>
 
-<h1 class="note-title">A Visual Guide to BaRe-Mem</h1>
+<h1 class="note-title">Mathematical Intuition Behind BaRe-Mem</h1>
 
-<p class="note-dek">The mathematics behind a Bayesian reliability memory, built up one equation at a time, with figures you can play with.</p>
+<p class="note-dek">The mathematics behind our Bayesian reliability memory.</p>
 
 <p class="note-meta"><b>Peilin Feng</b> · October 2, 2026 · 15 min read · Multi-Agent Consultation</p>
 
@@ -29,6 +29,9 @@ Here is what we want. For every candidate answer $$k$$ to a question $$q_t$$, a 
 - be usable for two decisions: how much to listen to each advisor, and whether to listen at all.
 
 ## Part 1: Reliability as a regression problem
+
+In the paper: [Section 3.1, *Belief Representation*](https://arxiv.org/html/2609.35551v1#S3.SS1.SSS0.Px1).
+{: .part-ref}
 
 ### The candidates
 
@@ -69,6 +72,9 @@ A Gaussian on a $$\pm 1$$ label looks puzzling at first: it is a regression on a
 
 ## Part 2: The posterior, exactly and online
 
+In the paper: [Section 3.1, *Memory*](https://arxiv.org/html/2609.35551v1#S3.SS1.SSS0.Px2); derivations in [Appendix A.1–A.4](https://arxiv.org/html/2609.35551v1#A1.SS1).
+{: .part-ref}
+
 ### The batch posterior
 
 Given every verified candidate so far, the posterior over $$w$$ is Gaussian with precision $$\Lambda$$ and mean $$m$$:
@@ -77,11 +83,11 @@ $$
 \Lambda = \lambda I + \sum x\,x^\top, \qquad b = \sum s\,x, \qquad m = \Lambda^{-1} b
 $$
 
-The appendix[add which part here(better to add a link which can lead the reader to the paper in this section)] derives this by completing the square in the log posterior. Two readings are worth keeping in mind. $$\Lambda$$ is a **precision**: every verified candidate adds $$x\,x^\top$$, so certainty accumulates exactly in the directions where evidence was observed. And $$m$$ is a **ridge regression**: it is the unique minimiser of $$\sum (s - w^\top x)^2 + \lambda \lVert w \rVert^2$$, with the prior acting as the regulariser.
+[Appendix A.1](https://arxiv.org/html/2609.35551v1#A1.SS1) of the paper derives this by completing the square in the log posterior. Two readings are worth keeping in mind. $$\Lambda$$ is a **precision**: every verified candidate adds $$x\,x^\top$$, so certainty accumulates exactly in the directions where evidence was observed. And $$m$$ is a **ridge regression**: it is the unique minimiser of $$\sum (s - w^\top x)^2 + \lambda \lVert w \rVert^2$$, with the prior acting as the regulariser.
 
 ### Process one outcome at a time
 
-Recomputing $$\Lambda^{-1}$$ after every question would be wasteful. Adding one observation changes $$\Lambda$$ by a rank-one term, and the Sherman–Morrison identity[add which part here(better to add a link which can lead the reader to the paper in this section)] inverts a rank-one change in closed form:
+Recomputing $$\Lambda^{-1}$$ after every question would be wasteful. Adding one observation changes $$\Lambda$$ by a rank-one term, and the Sherman–Morrison identity inverts a rank-one change in closed form ([Appendix A.3](https://arxiv.org/html/2609.35551v1#A1.SS3) proves it and derives the update):
 
 $$
 \big(P + u\,u^\top\big)^{-1} \;=\; S \;-\; \frac{S\,u\,u^\top S}{1 + u^\top S\,u}, \qquad S = P^{-1}
@@ -101,7 +107,7 @@ $$
 
 </div>
 
-The vector $$g$$ is the **Kalman gain**[add which part here(better to add a link which can lead the reader to the paper in this section)], and it is the heart of the method. Everything the memory learns passes through it, so it deserves a closer look.
+The vector $$g$$ is the **Kalman gain** (derived in [Appendix A.2](https://arxiv.org/html/2609.35551v1#A1.SS2)), and it is the heart of the method. Everything the memory learns passes through it, so it deserves a closer look.
 
 ### Comprehend the Kalman gain
 
@@ -139,7 +145,7 @@ Every verified outcome adds exactly one unit of precision, so the next gain is a
 
 ### Why this gain, and not another step
 
-The right panel is the appendix's derivation drawn out. For any update $$m + k\,(s - x^\top m)$$, the expected squared error after the update is
+The right panel is the derivation of [Appendix A.2](https://arxiv.org/html/2609.35551v1#A1.SS2) drawn out. For any update $$m + k\,(s - x^\top m)$$, the expected squared error after the update is
 
 $$
 R(k) = \operatorname{tr} S - 2\,k^\top S x + (1 + v)\,k^\top k, \qquad v = x^\top S x .
@@ -153,7 +159,7 @@ In more than one dimension, $$g = S x / (1 + v)$$ points along $$S x$$, not alon
 
 ### Watching it work
 
-The paper's Figure 1 is the simplest case. Give each candidate a single feature of its own, $$x = e_k$$. Then every quantity is a scalar, and after $$n$$ verified outcomes $$s_1, \dots, s_n$$ of that candidate:
+The paper's [Figure 1](https://arxiv.org/html/2609.35551v1#S3.F1) is the simplest case. Give each candidate a single feature of its own, $$x = e_k$$. Then every quantity is a scalar, and after $$n$$ verified outcomes $$s_1, \dots, s_n$$ of that candidate:
 
 $$
 \mu_n = \frac{\sum_{i \le n} s_i}{\lambda + n}, \qquad v_n = \frac{1}{\lambda + n} .
@@ -187,9 +193,12 @@ The figure is a toy, but the pattern is general. Averaged over 2,000 random stre
 
 ### Two properties for free
 
-Because $$\Lambda$$ and $$b$$ are plain sums, the posterior does not depend on the order in which verified outcomes arrive: any permutation gives the same $$\Lambda$$, the same $$b$$ and therefore the same $$m$$[add the derivation in paper in which part here(better to add a link which can lead the reader to the paper in this section)]. And because $$p_{t,k}$$ is always read before the outcome of question $$t$$ is written, every estimate uses only earlier evidence; there is no leakage from the answer being scored.
+Because $$\Lambda$$ and $$b$$ are plain sums, the posterior does not depend on the order in which verified outcomes arrive: any permutation gives the same $$\Lambda$$, the same $$b$$ and therefore the same $$m$$ ([Appendix A.4](https://arxiv.org/html/2609.35551v1#A1.SS4)). And because $$p_{t,k}$$ is always read before the outcome of question $$t$$ is written, every estimate uses only earlier evidence; there is no leakage from the answer being scored.
 
 ## Part 3: From a score to a probability
+
+In the paper: [Section 3.1, *Reliability Estimate*](https://arxiv.org/html/2609.35551v1#S3.SS1.SSS0.Px3); derivation in [Appendix A.5](https://arxiv.org/html/2609.35551v1#A1.SS5).
+{: .part-ref}
 
 The posterior over $$w$$ is Gaussian, so the score of a candidate is Gaussian too:
 
@@ -206,6 +215,9 @@ $$
 That is the shaded area in Figure 3. Two consequences follow directly. Before any evidence, $$m = 0$$, so every candidate starts at $$p = \Phi(0) = \tfrac12$$. And for a fixed $$\mu$$, a larger $$v$$ shrinks $$\mu/\sqrt{1+v}$$ toward zero, which pulls $$p$$ toward $$\tfrac12$$: an advisor the memory knows little about, or a question unlike any seen so far, is neither trusted nor distrusted strongly.
 
 ## Part 4: Reliability inside attention
+
+In the paper: [Section 3.2](https://arxiv.org/html/2609.35551v1#S3.SS2).
+{: .part-ref}
 
 The first use of $$p_{t,k}$$ is to change how much each advisor's answer influences the central model. For a context token $$j$$ that belongs to the response of advisor $$c(j)$$, BaRe-Mem adds a bias to the attention logit in every attention head:
 
@@ -225,6 +237,9 @@ with $$c = 1$$ for tokens outside advisor responses. So the bias is an exact **m
 A few properties fall straight out of the formula. Every $$c_k \in (0, 1]$$, and the most reliable advisor has $$c = 1$$: its weight is never changed. Its *share* of the attention can still grow, because the other advisors shrink before the mass is renormalised. The weights depend only on the ratios $$p_k / \max p$$, so multiplying every reliability by the same constant changes nothing. $$\gamma = 0$$ switches the mechanism off, and as $$\gamma$$ grows, attention concentrates on the top advisor. There are no trainable parameters; in the experiments, $$\gamma = 3$$, applied in the full-attention layers.
 
 ## Part 5: Deciding whether to consult
+
+In the paper: [Section 3.3](https://arxiv.org/html/2609.35551v1#S3.SS3); derivations in [Appendix A.6–A.8](https://arxiv.org/html/2609.35551v1#A1.SS6).
+{: .part-ref}
 
 Relative weights can say whom to trust more. They cannot say that the whole pool of advisors is worth ignoring. For that, BaRe-Mem compares two abilities on the current question.
 
@@ -293,7 +308,7 @@ Read the signs: the better the model already is, or the more bad advice costs, t
 
 ### What the decision actually needs
 
-The appendix ends with a short argument that changes how to think about all these estimates. Let $$a_t$$ and $$o_t$$ be the true probabilities that consulting and answering alone are right, and let $$W$$ be the questions where the rule picks the worse option. Then
+The appendix ends with a short argument ([Appendix A.8](https://arxiv.org/html/2609.35551v1#A1.SS8)) that changes how to think about all these estimates. Let $$a_t$$ and $$o_t$$ be the true probabilities that consulting and answering alone are right, and let $$W$$ be the questions where the rule picks the worse option. Then
 
 $$
 \mathrm{Acc}_{\mathrm{select}} \;\ge\; \max\big(\mathrm{Acc}_{\mathrm{consult}},\, \mathrm{Acc}_{\mathrm{alone}}\big) \;-\; \frac{1}{N} \sum_{t \in W} \lvert a_t - o_t \rvert .
@@ -315,13 +330,10 @@ The same posterior serves one more decision in the paper: in an agent team, the 
 ## Citation
 
 ```bibtex
-@misc{feng2026baremembayesianreliabilitymemory,
-      title={BaRe-Mem: Bayesian Reliability Memory for Robust and Adaptive Agent Consultation},
-      author={Peilin Feng and Zhengyang Huang and Soujanya Poria},
-      year={2026},
-      eprint={2609.35551},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2609.35551},
+@article{feng2026bare,
+  title={BaRe-Mem: Bayesian Reliability Memory for Robust and Adaptive Agent Consultation},
+  author={Feng, Peilin and Huang, Zhengyang and Poria, Soujanya},
+  journal={arXiv preprint arXiv:2609.35551},
+  year={2026}
 }
 ```

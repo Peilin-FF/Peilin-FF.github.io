@@ -82,6 +82,7 @@
   }
   .note-links a:hover { border-color: var(--faint); text-decoration: none; }
 
+  .note .part-ref { margin: -.5em 0 1.4em; font: 400 14.5px/1.5 Inter, system-ui, sans-serif; color: var(--muted); }
   .note h2 { font: 700 27px/1.25 "Source Serif 4", Georgia, serif; color: var(--ink); margin: 2.1em 0 .6em; }
   .note p { margin: 0 0 1.1em; }
   .note ul, .note ol { padding-left: 1.3em; }
@@ -133,7 +134,7 @@
 <div class="progress" id="progress"></div>
 <header class="topbar">
   <a class="home" href="/">{{ site.title }}</a>
-  <nav><a class="wide" href="/#-publications">Publications</a><a href="/#-notes">Notes</a></nav>
+  <nav><a class="wide" href="/#-publications">Publications</a><a href="/#-inspiration-notes">Notes</a></nav>
 </header>
 
 <main class="note">
@@ -141,7 +142,7 @@
 </main>
 
 <footer class="note-end">
-  <a href="/#-notes">← All notes</a><a href="/">Homepage</a>
+  <a href="/#-inspiration-notes">← All notes</a><a href="/">Homepage</a>
 </footer>
 
 {% if page.widgets %}<script defer src="{{ page.widgets }}"></script>{% endif %}
