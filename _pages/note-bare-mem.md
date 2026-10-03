@@ -13,11 +13,7 @@ author_profile: false
 
 <h1 class="note-title">Mathematical Intuition Behind BaRe-Mem</h1>
 
-<<<<<<< Updated upstream
 <p class="note-dek">The mathematics behind our Bayesian reliability memory.</p>
-=======
-<p class="note-dek">The mathematics behind a Bayesian reliability memory</p>
->>>>>>> Stashed changes
 
 <p class="note-meta"><b>Peilin Feng</b> · October 2, 2026 · 15 min read · Multi-Agent Consultation</p>
 
