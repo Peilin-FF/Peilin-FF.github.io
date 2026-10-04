@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Peilin Feng"
-description              : "An undergraduate student at Beihang University, dedicated to machine learning and mathematical applications"
+description              : "PhD student at Nanyang Technological University, working on LLM agents and multi-agent systems"
 repository               : "Peilin-FF/Peilin-FF.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,12 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Peilin Feng"
   avatar           : "/images/picture.jpg"
-  bio              : "Beijing University of Aeronautics and Astronautics"
-  location         : "Beijing, China"
+  bio              : "Nanyang Technological University"
+  location         : "Singapore"
   employer         : #"Beijing University of Aeronautics and Astronautics"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=8pF8RzMAAAAJ"
-  email            : "fengpeilin@buaa.edu.cn"
+  email            : "PFENG001@e.ntu.edu.sg"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

@@ -17,15 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Peilin Feng (冯沛林), an undergraduate student at **Beihang University**(2021-2025), majoring in **Automation Science and Electrical Engineering** with a minor in **Mathematical Sciences**. Under the supervision of [Professor Lei Huang](https://huangleibuaa.github.io/), I am currently focusing on Deep neural network architecture design and Multimodal Understanding. In the future, I hope to work on vllm and agent. My ultimate goal is to make AI better serve our lives.
+My name is Peilin Feng (冯沛林), and my English name is **Albert Von**. I chose it because I hope to become a great scientist like [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), the physicist, and [Albert Gu](https://csd.cmu.edu/people/faculty/albert-gu), whose work on state-space models brought an idea from control theory into modern sequence modelling.
 
-I also have a deep passion for mathematics. I serve as a teaching assistant for the Mathematical Analysis for Engineering course. My responsibilities include grading homework, answering students' questions, and leading review lectures.
-Outside of my academic and research interests, I enjoy playing ping pong 🏓 and swimming 🤿. In my leisure time, I like to listen to some music 🎵 and watch my favorite cartoon Doraemon 📺 for relax.
+I am a PhD student at **Nanyang Technological University (NTU)**, in the [DeCLaRe Lab](https://declare-lab.github.io/) supervised by Prof. [Soujanya Poria](https://soujanyaporia.github.io/). My research interest comes from one goal: I want to build an intelligent robot like Doraemon 🐱. On the way there, I work on LLM agents and multi-agent systems: whom an agent should trust, when it should consult others, and how it can learn from verified experience. [BaRe-Mem](https://arxiv.org/abs/2609.35551) is my latest step in that direction.
 
+Before NTU, I received my bachelor's degree from **Beihang University** (2021-2025), majoring in Automation Science and Electrical Engineering with a minor in Mathematical Sciences, where I worked with [Prof. Lei Huang](https://huangleibuaa.github.io/) on neural network architecture design and multimodal understanding. I have also interned at the Shanghai AI Lab and at Zhipu AutoGLM, working on agents for Earth observation, synthetic image detection and GUI agents.
 
-My research interests span the intersection of NLP and Computer Vision, with a particular focus on Multimodal Understanding. This stems from my dedication to creating an AGI similar to Doraemon 🐱. Currently, I am actively working to bridge my knowledge gaps in this area, with the goal of becoming an expert in the field. 
-
-However, artificial intelligence is developing rapidly, so I always hope to be at the forefront of the field and use my intelligence to devote to our society. I believe that is an exciting exploring travel.
+I have a deep passion for mathematics, and I served as a teaching assistant for Mathematical Analysis at Beihang, grading homework, answering students' questions and leading review lectures. Outside research, I enjoy playing ping pong 🏓 and swimming 🤿, listening to music 🎵 and watching my favourite cartoon, Doraemon 📺.
 <!--(You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
 
 
