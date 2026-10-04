@@ -19,9 +19,9 @@ redirect_from:
 
 My name is Peilin Feng (冯沛林), and my English name is **Albert Von**. I chose it because I hope to become a great scientist like [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), the physicist, and [Albert Gu](https://csd.cmu.edu/people/faculty/albert-gu), whose work on state-space models brought an idea from control theory into modern sequence modelling.
 
-I am a PhD student at **Nanyang Technological University (NTU)**, in the [DeCLaRe Lab](https://declare-lab.github.io/) supervised by Prof. [Soujanya Poria](https://soujanyaporia.github.io/). My research interest comes from one goal: I want to build an intelligent robot like Doraemon 🐱. On the way there, I work on LLM agents and multi-agent systems: whom an agent should trust, when it should consult others, and how it can learn from verified experience. [BaRe-Mem](https://arxiv.org/abs/2609.35551) is my latest step in that direction.
+I am a PhD student at **Nanyang Technological University (NTU)**, in the [DeCLaRe Lab](https://declare-lab.github.io/) supervised by Prof. [Soujanya Poria](https://soujanyaporia.github.io/). My research interest comes from one goal: I want to build an intelligent robot like Doraemon 🐱. On the way there, I work on LLM agents and multi-agent systems: whom an agent should trust, when it should consult others, and how it can learn from verified experience.
 
-Before NTU, I received my bachelor's degree from **Beihang University** (2021-2025), majoring in Automation Science and Electrical Engineering with a minor in Mathematical Sciences, where I worked with [Prof. Lei Huang](https://huangleibuaa.github.io/) on neural network architecture design and multimodal understanding. I have also interned at the Shanghai AI Lab and at Zhipu AutoGLM, working on agents for Earth observation, synthetic image detection and GUI agents.
+Before NTU, I received my bachelor's degree from **Beihang University** (2021-2025), majoring in Control Science and Engineering with a minor in Mathematical Sciences, where I worked with [Prof. Lei Huang](https://huangleibuaa.github.io/) on neural network architecture design and multimodal understanding. I have also interned at the Shanghai AI Lab and at Zhipu AutoGLM, working on agents for Earth observation, synthetic image detection and GUI agents.
 
 I have a deep passion for mathematics, and I served as a teaching assistant for Mathematical Analysis at Beihang, grading homework, answering students' questions and leading review lectures. Outside research, I enjoy playing ping pong 🏓 and swimming 🤿, listening to music 🎵 and watching my favourite cartoon, Doraemon 📺.
 <!--(You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
@@ -135,8 +135,8 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 
 # 📖 Educations
 
-- *2026.08 - 2030.06*, School of Electrical and Electronic Engineering, NTU, Singarpore. 
-- *2021.09 - 2025.06*, Automation Science, Beihang University, Beijing, China.
+- *2026.08 - 2030.06*, School of Electrical and Electronic Engineering, NTU, Singapore. 
+- *2021.09 - 2025.06*, Control Science and Engineering, Beihang University, Beijing, China.
 
 # 💬 Tutorial Materials in Teaching Assistant
 
