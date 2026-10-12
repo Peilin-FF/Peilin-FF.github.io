@@ -120,6 +120,7 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 
 
 # 🎖 Honors and Awards
+- *2026.10* Top Reviewer of NeurIPS 2026 \| [\[Certificate\]](./profiles/Award/NeurIPS2026_TopReviewer.pdf)
 - *2025.06* Outstanding undergraduate graduate of Beihang University(top3%)
 - *2024.12* Grand prize for Contests Scholarship in Beihang University
 - *2023.12* Outstanding student cadres
@@ -177,7 +178,7 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 
 
 # ✏️ Community Service
-- Conference Reviewer: AAAI, ICLR, Neurips
+- Conference Reviewer: AAAI, ICLR, NeurIPS (Top Reviewer, 2026)
 <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=zPzVmHbYMKiKoDeQ37f2Y60SWu9aiDwmXLD4moLgquc&cl=ffffff&w=200"></script>
 
 
