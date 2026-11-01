@@ -1,0 +1,13 @@
+{%- comment -%}
+  Numbered parts of include.series: published posts by series_order, then planned titles.
+  include.current is the URL of the post being read, if any.
+{%- endcomment -%}
+{%- assign sl_parts = site.posts | where: "series", include.series.id | sort: "series_order" -%}
+<ol class="series-list">
+  {%- for sl_post in sl_parts %}
+  <li class="{% if sl_post.url == include.current %}is-current{% else %}is-published{% endif %}"><a href="{{ sl_post.url }}"{% if sl_post.url == include.current %} aria-current="page"{% endif %}>{{ sl_post.title }}</a></li>
+  {%- endfor %}
+  {%- for sl_title in include.series.planned %}
+  <li class="is-planned">{{ sl_title }}<span class="soon">· planned</span></li>
+  {%- endfor %}
+</ol>

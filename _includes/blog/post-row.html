@@ -1,0 +1,13 @@
+{%- comment -%} One post in a list. Pass show_topic=true to name its topic. {%- endcomment -%}
+{%- assign row_post = include.post -%}
+{%- assign row_topic = site.data.topics | where: "id", row_post.topic | first -%}
+<li class="post-row">
+  <time class="post-row-date" datetime="{{ row_post.date | date_to_xmlschema }}">{{ row_post.date | date: "%b %-d, %Y" }}</time>
+  <div>
+    <a class="post-row-title" href="{{ row_post.url }}">{{ row_post.title }}</a>
+    {%- if row_post.excerpt %}
+    <p class="post-row-excerpt">{{ row_post.excerpt | strip_html | strip_newlines }}</p>
+    {%- endif %}
+    <p class="post-row-meta">{% if include.show_topic and row_topic %}<a href="/blog/#topic-{{ row_topic.id }}">{{ row_topic.name }}</a> · {% endif %}{% include blog/read-time.html post=row_post %}</p>
+  </div>
+</li>

@@ -42,6 +42,27 @@ I have a deep passion for mathematics, and I served as a teaching assistant for 
 - *2024.10*: &nbsp;🎉🎉 I successfully submitted my first paper to ICLR 2025 <font color=MediumVioletRed>(First Author)</font>, marking a milestone to my research career. I hope I will be more excellent in the future.
 -->
 
+# 📒 Blog
+<span class='anchor' id='-inspiration-notes'></span>
+Learning notes and research write-ups, organised by topic and series.
+
+<div class="blog-home">
+{%- for post in site.posts limit: 3 -%}
+{%- assign card_topic = site.data.topics | where: "id", post.topic | first %}
+<a class="blog-card{% if forloop.first %} is-featured{% endif %}" href="{{ post.url }}" target="_self">
+{%- if post.image %}<span class="blog-card-cover"><img src="{{ post.image }}" alt="" loading="lazy"></span>{% endif %}
+<span class="blog-card-body">
+<span class="blog-card-topic">{{ card_topic.name | default: "Blog" }}</span>
+<span class="blog-card-title">{{ post.title }}</span>
+<span class="blog-card-excerpt">{{ post.excerpt | strip_html | strip_newlines }}</span>
+<span class="blog-card-meta">{{ post.date | date: "%b %-d, %Y" }} · {% include blog/read-time.html post=post %}</span>
+</span>
+</a>
+{%- endfor %}
+</div>
+
+<p class="blog-home-more">Browse by topic:{% for t in site.data.topics %}{% assign t_count = site.posts | where: "topic", t.id | size %}{% if t_count > 0 %} <a href="/blog/#topic-{{ t.id }}" target="_self">{{ t.name }}</a> ({{ t_count }}) ·{% endif %}{% endfor %} <a href="/blog/" target="_self"><b>All posts →</b></a></p>
+
 # 📝 Publications
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/paper/BaRe-Mem.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -151,9 +172,6 @@ Hengrui Kang<sup>†</sup>, Siwei Wen<sup>†</sup>, Zichen Wen<sup>†</sup>, J
 ## 📄 Test:
 - *2022.10*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(I) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(I)Test.pdf) & \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(I)Answer.pdf)
 - *2023.04*,&nbsp;&nbsp;Mock Mid-term Exam, Mathematical Analysis(II) \| [\[Test\]](./profiles/Test/MathematicalAnalysis(II)Test.pdf) & \| [\[Answer\]](./profiles/Test/MathematicalAnalysis(II)Answer.pdf)
-
-# 📒 Inspiration Notes
-- *2026.10*: &nbsp;[Mathematical Intuition Behind BaRe-Mem](/notes/bare-mem/). The mathematics behind our Bayesian reliability memory.
 
 # 💻 Internships
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/Internship/zhipu.png' alt="ZHIPU" width="30%" style="margin-bottom: 0;"></div></div>

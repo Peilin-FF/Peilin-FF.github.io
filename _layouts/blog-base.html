@@ -1,0 +1,51 @@
+<!doctype html>
+{%- assign base_url = "https://peilin-ff.github.io" -%}
+{%- assign meta_title = page.title | strip_html | escape_once -%}
+{%- assign meta_desc = page.excerpt | default: site.description | strip_html | strip_newlines | escape_once -%}
+{%- assign is_zh = false -%}{%- if page.lang contains "zh" -%}{%- assign is_zh = true -%}{%- endif %}
+<html lang="{% if is_zh %}zh-CN{% else %}en{% endif %}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ meta_title }} · {{ site.title }}</title>
+<meta name="description" content="{{ meta_desc }}">
+<meta name="author" content="{{ site.title }}">
+<link rel="canonical" href="{{ base_url }}{{ page.url }}">
+<meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ meta_title }}">
+<meta property="og:description" content="{{ meta_desc }}">
+<meta property="og:url" content="{{ base_url }}{{ page.url }}">
+{% if page.image %}<meta property="og:image" content="{{ base_url }}{{ page.image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ base_url }}{{ page.image }}">{% endif %}
+<meta name="twitter:title" content="{{ meta_title }}">
+<meta name="twitter:description" content="{{ meta_desc }}">
+{% feed_meta %}
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400{% if is_zh %}&family=Noto+Serif+SC:wght@400;600;700{% endif %}&display=swap" rel="stylesheet">
+{% if page.math %}<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>{% endif %}
+<link rel="stylesheet" href="/assets/css/blog.css">
+{% if page.widgets %}<link rel="stylesheet" href="/assets/css/notes/widgets.css">{% endif %}
+</head>
+<body>
+<header class="topbar">
+  <a class="home" href="/">{{ site.title }}</a>
+  <nav><a href="/blog/"{% if page.url == "/blog/" %} aria-current="page"{% endif %}>Blog</a><a class="wide" href="/#-publications">Publications</a><a href="/">About</a></nav>
+</header>
+
+{{ content }}
+
+<footer class="site-end{% unless page.collection == 'posts' %} wide{% endunless %}">
+  <a href="/blog/">All posts</a><a href="/">Homepage</a><a href="/feed.xml">RSS</a>
+</footer>
+
+<script defer src="/assets/js/blog.js"></script>
+</body>
+</html>

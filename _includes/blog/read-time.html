@@ -1,0 +1,16 @@
+{%- comment -%}
+  "N min read" for include.post. `read_time` in front matter overrides the estimate.
+  English is counted in words, Chinese (lang: zh) in characters.
+{%- endcomment -%}
+{%- if include.post.read_time -%}
+  {%- assign rt_min = include.post.read_time -%}
+{%- else -%}
+  {%- assign rt_text = include.post.content | strip_html -%}
+  {%- if include.post.lang contains "zh" -%}
+    {%- assign rt_min = rt_text | strip_newlines | remove: " " | size | divided_by: 400 -%}
+  {%- else -%}
+    {%- assign rt_min = rt_text | number_of_words | divided_by: 220 -%}
+  {%- endif -%}
+  {%- if rt_min < 1 -%}{%- assign rt_min = 1 -%}{%- endif -%}
+{%- endif -%}
+{{- rt_min }} min read

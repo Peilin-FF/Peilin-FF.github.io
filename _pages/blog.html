@@ -1,0 +1,76 @@
+---
+layout: blog-base
+title: "Blog"
+permalink: /blog/
+excerpt: "Learning notes and research write-ups by Peilin Feng, organised by topic and series."
+author_profile: false
+---
+{%- assign posts = site.posts -%}
+<main class="blog">
+  <header class="blog-head">
+    <p class="note-kicker">Blog</p>
+    <h1 class="note-title">Notes on agents, and the mathematics behind them</h1>
+    <p class="note-dek">Learning notes and research write-ups, organised by topic and series so they can be read in order.</p>
+    <p class="note-meta">{{ posts.size }} {% if posts.size == 1 %}post{% else %}posts{% endif %} · {{ site.data.series.size }} series · <a href="/feed.xml">RSS feed</a></p>
+  </header>
+
+  <div class="view-tabs" role="tablist" hidden>
+    <button type="button" role="tab" data-view="topics" aria-selected="true">By topic</button>
+    <button type="button" role="tab" data-view="archive" aria-selected="false">By date</button>
+  </div>
+
+  <section class="view" data-view-panel="topics" aria-label="Posts by topic">
+    <div class="topic-grid">
+      {%- for t in site.data.topics %}
+      {%- assign t_posts = posts | where: "topic", t.id %}
+      <a class="topic-card{% if t_posts.size == 0 %} is-empty{% endif %}" href="#topic-{{ t.id }}">
+        <span class="topic-card-name">{{ t.name }}</span>
+        <span class="topic-card-desc">{{ t.description }}</span>
+        <span class="topic-card-count">{% if t_posts.size == 0 %}Coming soon{% elsif t_posts.size == 1 %}1 post{% else %}{{ t_posts.size }} posts{% endif %}</span>
+      </a>
+      {%- endfor %}
+    </div>
+
+    {%- for t in site.data.topics %}
+    {%- assign t_posts = posts | where: "topic", t.id %}
+    {%- assign t_series = site.data.series | where: "topic", t.id %}
+    {%- if t_posts.size > 0 or t_series.size > 0 %}
+    <section class="topic" id="topic-{{ t.id }}">
+      <h2>{{ t.name }}</h2>
+      <p class="topic-desc">{{ t.description }}</p>
+
+      {%- for s in t_series %}
+      {%- assign s_parts = posts | where: "series", s.id %}
+      {%- assign s_total = s_parts.size | plus: s.planned.size %}
+      <div class="series-card" id="series-{{ s.id }}">
+        <div class="series-card-head">
+          <h3>{{ s.title }}</h3>
+          <span class="series-progress" title="{{ s_parts.size }} of {{ s_total }} parts published">{% for n in (1..s_total) %}<i{% if n <= s_parts.size %} class="on"{% endif %}></i>{% endfor %}<b>{{ s_parts.size }}/{{ s_total }}</b></span>
+        </div>
+        <p>{{ s.description }}</p>
+        {% include blog/series-list.html series=s %}
+      </div>
+      {%- endfor %}
+
+      {%- capture loose_rows -%}
+        {%- for p in t_posts -%}{%- unless p.series -%}{%- include blog/post-row.html post=p -%}{%- endunless -%}{%- endfor -%}
+      {%- endcapture -%}
+      {%- assign loose_rows = loose_rows | strip %}
+      {%- if loose_rows != "" %}
+      <ul class="post-list">{{ loose_rows }}</ul>
+      {%- endif %}
+    </section>
+    {%- endif %}
+    {%- endfor %}
+  </section>
+
+  <section class="view" id="archive" data-view-panel="archive" aria-label="Posts by date">
+    {%- assign years = posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+    {%- for y in years %}
+    <h2 class="archive-year">{{ y.name }}</h2>
+    <ul class="post-list">
+      {%- for p in y.items %}{% include blog/post-row.html post=p show_topic=true %}{% endfor %}
+    </ul>
+    {%- endfor %}
+  </section>
+</main>

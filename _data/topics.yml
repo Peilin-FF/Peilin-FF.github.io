@@ -1,0 +1,17 @@
+# Blog topics, shown on /blog/ in this order.
+# A post joins a topic with `topic: <id>` in its front matter.
+- id: agents
+  name: "LLM Agents"
+  description: "Multi-agent systems, memory and consultation: whom an agent should trust, and when."
+
+- id: math
+  name: "Mathematical Foundations"
+  description: "Bayesian inference, linear algebra and analysis, worked through from first principles."
+
+- id: sequence-models
+  name: "Sequence Models"
+  description: "State-space models, Mamba and attention: how sequence architectures work and why."
+
+- id: paper-reading
+  name: "Paper Reading"
+  description: "Close readings of papers I found worth the time."

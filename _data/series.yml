@@ -1,0 +1,10 @@
+# Blog series: ordered reading paths inside a topic.
+# A post joins a series with `series: <id>` and `series_order: <n>` in its front matter.
+# `planned` lists parts not written yet; they show greyed out after the published parts.
+- id: understanding-bare-mem
+  title: "Understanding BaRe-Mem"
+  topic: agents
+  description: "The ideas behind our Bayesian reliability memory, one piece at a time."
+  planned:
+    - "Agent teams: ranking workers before they answer"
+    - "Reading the experiments: robustness to misleading advisors"
